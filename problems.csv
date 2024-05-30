@@ -1,560 +1,554 @@
-Source	Computational?	Answer	Difficulty	Topic	Problem	Solution
-IMO Prelim 2024 P1	1	65		N	Find the highest common factor of \(8^8-1\) and \(4^9+1\).	
-IMO Prelim 2024 P2	1	200		N	Let \(n\) be a positive integer less than \(100\) such that the tens digit of \(n^2\) is \(7\). Find the sum of all possible values of \(n\).	
-IMO Prelim 2024 P3	1	-281		A	Let \(a, b, c\) be integers such that \(2^a + 2^b + 2^c = \frac{37}{64}\). Find the value of \(a^3 + b^3 + c^3\).	
-IMO Prelim 2024 P4	1	4051		A	Mike wrote down \(m\) consecutive integers with sum 2\(m\), while Kent wrote down 2\(m\) consecutive integers with sum \(m\). If the difference between the largest integer written by Mike and the largest integer written by Kent is \(2024\), find \(m\).
-IMO Prelim 2024 P5	1	84		G	\(ABCD\) is a convex quadrilateral in which \(AB = BC = CD\). If \(\angle{ABC} = 48^\circ\) and \(\angle{BCD} = 108^\circ\), find \(\angle{CAD}\).
-IMO Prelim 2024 P6	1	7\sqrt{2}/8	G	Let \(A\) be a point on the graph of \( y = |x|\), and \(B\) be a point on the graph of \(x = y^2 + 2\). Find the smallest possible distance between \(A\) and \(B\).
-IMO Prelim 2024 P7	1	2+\sqrt{7}	G	\(ABCD\) is a square. \(P\) and \(Q\) are points on the sides \(BC\) and \(CD\) respectively such that \(\angle{PAQ} = 45^\circ, PQ = 4\) and the area of \(\triangle{PCQ}\) is \(3\). Find \(AB\).	
-IMO Prelim 2024 P8	1	131		G	In \(\triangle{ABC}, D\) and \(E\) are points on the sides \(AB\) and \(AC\) respectively such that \(B,C,D,E\) lie on a common circle with centre \(O\) and that \(ADOE\) is a parallelogram. Suppose \(\angle{BAC} = x^\circ \) and \(\angle{BOC} = y^\circ \). If \(x+y = 196\), find the sum of all possible values of \(x\).	
-IMO Prelim 2024 P9	1	233000		C	In a language, there are \(5\) vowels and \(8\) consonants in the alphabet. Each word is made up of exactly \(5\) (not necessarily distinct) letters, with at least \(2\) vowels and at least \(1\) consonant. What is the maximum number of words in this language?
-IMO Prelim 2024 P10	1	32		C	A \( 3 \times 3\) grid is printed on a card. It is made up of \(4\) horizontal lines and \(4\) vertical lines. Each cell of the grid has width \(2\) and height \(1\). Mandy drew along the gridlines in a single pen stroke such that no point is visited more than once except at the intersections of the grid lines. Find the maximum possible length of the figure drawn by Mandy.	
-IMO Prelim 2024 P11	1	  3/32		G	A frog is at an arbitrary point inside an equilateral triangle with area \(1\). Each time the frog picks one of the vertices of the triangle that has not been picked before, and jumps halfway from where it is towards the chosen vertex. After three jumps, the frog is at point \(X\). What is the total area of the region formed by all possible positions of \(X\)?	
-IMO Prelim 2024 P12	1	2\sqrt{2}	A	The equation \(x^3 - \frac{1}{x} = 4\) has two real roots \(a\) and \(b\). Find the value of \(a^2 + b^2\).	
-IMO Prelim 2024 P13	1	136/3		A	There is an arithmetic sequence with common difference \(d\),' said the teacher. 'When each term of the sequence is rounded off to the nearest integer, the first \(7\) terms are \(12, 18, 25, 32, 39, 45, 52\). What is the range of possible values of \(d\)?' The correct answer to the teacher's question is \(a < d < b\) where \(a\) and \(b\) are two real numbers. Find the value of \(ab\).
-IMO Prelim 2024 P14	1	90		N	How many positive integers \(n\) are there such that \(n\) has exactly \(2024\) positive factors, and that \(n\) is also a factor of \(2024^{2024}\)?
-IMO Prelim 2024 P15	1	40001/400	A	Let \(a_1, a_2, a_3, \dots\) be a sequence such that \(a_1 = 1\), and that the equalities \(a_{2n} = \frac{a_n}{2} + \frac{3n}{4}\) and \(a_{2n+1} = \frac{4a_na_{n+1} + 2na_n + 2(n+1)a_{n+1}-3n^2-3n-1}{2(2a_n + 2a_{n+1}-2n-1)}\) hold for all positive integers \(n\). If \(a\) is a term in the sequence such that \(a > 100\), find the smallest possible value of \(a\).	
-IMO Prelim 2024 P16	1	424		G	\(A,B,C,D,E\) are five points on a circle with \(AB \times \AD = 224\) and \(AC \times AE = 360\). If \(BCDE\) is a square, find its area.
-IMO Prelim 2024 P17	1	661/5544	C	Betty, Cathy, Daisy and Emily played a game in which they were given \(2,3,4\) and \(5\) balls respectively. Each player wrote their name on each ball they had and all the balls were then put into a bag. The balls in the bag were then drawn one by one, and the balls drawn were returned to the respective players. The first player who got back all her balls is the winner. What is the probability for Emily to win?
-IMO Prelim 2024 P18	1	8\sqrt{5}	G	\(AB\) is a diameter of a circle of radius \(12\). \(C\) and \(D\) are two points on the circle such that the chord \(CD\) meets \(AB\) at \(E\). The tangent to the circle at \(A\) meets the extension of \(CD\) at \(F\). If \(CE:ED:DF = 4:3:3\), find \(AC\).	
-IMO Prelim 2024 P19	1	792		C	There are \(36\) points on the rectangular coordinate plane whose \(x-\) and \(y-\)coordinates are both positive integers not exceeding \(6\). How many triangles have their circumcentres and vertices being among these \(36\) points?	
-IMO Prelim 2024 P20	1	4045		N	Let \(n\) be a \(4-\)digit positive integer. When \((n+2^2)(n^2+3^2)(n^3+4^2)\cdots(n^{2023} + 2024^2)\) is expressed in binary notation, at most how many ending zeros can there be?
-IMO Prelim 2023 P1	1	449		N	
-IMO Prelim 2023 P2	1	1799		A		
-IMO Prelim 2023 P3	1	362		C		
-IMO Prelim 2023 P4	1	24		N		
-IMO Prelim 2023 P5	1	3\sqrt{2}/2	G			
-IMO Prelim 2023 P6	1	15		N		
-IMO Prelim 2023 P7	1	111\sqrt3	G			
-IMO Prelim 2023 P8	1	81		A		
-IMO Prelim 2023 P9	1	{1+3\sqrt5}/4	A			
-IMO Prelim 2023 P10	1	120		N		
-IMO Prelim 2023 P11	1	128		C		
-IMO Prelim 2023 P12	1	 3:1		G		
-IMO Prelim 2023 P13	1	48^\circ	G			
-IMO Prelim 2023 P14	1	14		C		
-IMO Prelim 2023 P15	1	32		C		
-IMO Prelim 2023 P16	1	29/128		C		
-IMO Prelim 2023 P17	1	1+2\sqrt2	G			
-IMO Prelim 2023 P18	1	1326		C		
-IMO Prelim 2023 P19	1	18		C		
-IMO Prelim 2023 P20	1	67473		N		
-IMO Prelim 2022 P1	1					
-IMO Prelim 2022 P2	1					
-IMO Prelim 2022 P3	1					
-IMO Prelim 2022 P4	1					
-IMO Prelim 2022 P5	1					
-IMO Prelim 2022 P6	1					
-IMO Prelim 2022 P7	1					
-IMO Prelim 2022 P8	1					
-IMO Prelim 2022 P9	1					
-IMO Prelim 2022 P10	1					
-IMO Prelim 2022 P11	1					
-IMO Prelim 2022 P12	1					
-IMO Prelim 2022 P13	1					
-IMO Prelim 2022 P14	1					
-IMO Prelim 2022 P15	1					
-IMO Prelim 2022 P16	1					
-IMO Prelim 2022 P17	1					
-IMO Prelim 2022 P18	1					
-IMO Prelim 2022 P19	1					
-IMO Prelim 2022 P20	1					
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-IMO 2023/1	0	N/A		N	Determine all composite integers \(n > 1\) that satisfy the following property: if \(d_1, d_2, \dots, d_k\) are all the positive divisors of \(n\) with \(1=d_1 < d_2 < \dots < d_k =n \), then \(d_i\) divides \(d_{i+1}+d_{i+2}\) for every \(1\leqslant i\leqslant k-2\).	
-IMO 2023/2	0	N/A		G	Let \(ABC\) be an acute-angled triangle with \(AB < AC\). Let \(\Omega\) be the circumcircle of \(ABC\). Let \(S\) be the midpoint of the arc \(CB\) of \(\Omega\) containing \(A\). The perpendicular from \(A\) to \(BC\) meets \(BS\) at \(D\) and meets \(\Omega\) again at \(E\neq A\). The line through \(D\) parallel to \(BC\) meets line \(BE\) at \(L\). Denote the circumcircle of triangle \(BDL\) by \(\omega\). Let \(\omega\) meet \(\Omega\) again at \(P\neq B\). <br> Prove that the line tangent to \(\omega\) at \(P\) meets line \(BS\) on the internal angle bisector of \(\angle BAC\).	
-IMO 2023/3	0	N/A		A	For each integer \(k\geqslant 2\), determine all infinite sequences of positive integers \(a_1, a_2, \dots\) for which there exists a polynomial \(P\) of the form \(P(x) = x^k+c_{k-1}x^{k-1}+\dots+c_1x+c_0\), where \(c_0, c_1, \dots, c_{k-1}\) are non-negative integers, such that $$P(a_n)=a_{n+1}a_{n+2}\dots a_{n+k}$$ for every integer \(n\geqslant 1\).	
-IMO 2023/4	0	N/A		A	Let \(x_1, x_2, \dots, x_{2023}\) be pairwise different positive real numbers such that $$a_n=\sqrt{(x_1+x_2+\dots+x_n)\left(\frac{1}{x_1}+\frac{1}{x_2}+\dots+\frac{1}{x_n}\right)}$$ is an integer for every \(n = 1, 2, \dots, 2023\). Prove that \(a_{2023}\geqslant 3034\).	
-IMO 2023/5	0	N/A		C	Let \(n\) be a positive integer. A <i>Japanese triangle</i> consists of \(1+2+\dots+n\) circles arranged in an equilateral triangular shape such that for each \(i = 1, 2, \dots, n\), the \(i\)<sup>th</sup> row contains exactly \(i\) circles, exactly one of which is coloured red. A <i>ninja path</i> in a Japanese triangle is a sequence of \(n\) circles obtained by starting in the top row, then repeatedly going from a circle to one of the two circles immediately below it and finishing in the bottom row. <br> In terms of \(n\), find the greatest \(k\) such that in each Japanese triangle there is a ninja path containing at least \(k\) red circles.	
-IMO 2023/6	0	N/A		G	Let \(ABC\) be an equilateral triangle. Let \(A_1, B_1, C_1\) be interior points of \(ABC\) such that \(BA_1=A_1C\), \(CB_1=B_1A\), \(AC_1=C_1B\), and $$\angle BA_1C + \angle CB_1A + \angle AC_1B = 480^{\circ}.$$ Let \(BC_1\) and \(CB_1\) meet at \(A_2\), let \(CA_1\) and \(AC_1\) meet at \(B_2\), and let \(AB_1\) and \(BA_1\) meet at \(C_2\). Prove that if triangle \(A_1B_1C_1\) is scalene, then the three circumcircles of triangles \(AA_1A_2\), \(BB_1B_2\) and \(CC_1C_2\) all pass through two common points. <br> <br> (Note: a scalene triangle is one where no two sides have equal length.)	
-IMO 2022/1	0	N/A		C	The Bank of Oslo issues two types of coin: aluminium (denoted \(A\)) and bronze (denoted \(B\)). Marianne has \(n\) aluminium coins and \(n\) bronze coins, arragned in a row in some arbitrary initial order. A <i>chain</i> is any subsequence of consecutive coins of the same type. Given a fixed positive integer \(k\leqslant 2n\), Marianne repeatedly performs the following operation: she identifies the longest chain containing the \(k\)<sup>th</sup> coin from the left, and moves all coins in that chain to the left end of the row. For example, if \(n=4\) and \(k=4\), the process starting from the ordering \(AABBBABA\) would be $$AAB\underline{B}BABA\rightarrow BBB\underline{A}AABA\rightarrow AAA\underline{B}BBBA\rightarrow BBB\underline{B}AAAA\rightarrow BBB\underline{B}AAAA\rightarrow\dots .$$ Find all pairs \((n,k)\) with \(1\leqslant k\leqslant 2n\) such that for every initial ordering, at some moment during the process, the leftmost \(n\) coins will all be of the same type.	
-IMO 2022/2	0	N/A		A	Let \(\mathbb{R}^+\) denote the set of positive real numbers. Find all functions \(f:\mathbb{R}^+\rightarrow\mathbb{R}^+\) such that for each \(x\in\mathbb{R}^+\), there is exactly one \(y\in\mathbb{R}^+\) satisfying $$xf(y)+yf(x)\leqslant 2.$$	
-IMO 2022/3	0	N/A		N	Let \(k\) be a positive integer and let \(S\) be a finite set of odd prime numbers. Prove that there is at most one way (up to rotation and reflection) to place the elements of \(S\) around a circle such that the product of any two neighbours is of the form \(x^2+x+k\) for some positive integer \(x\).	
-IMO 2022/4	0	N/A		G	Let \(ABCDE\) be a convex pentagon such that \(BC=DE\). Assume that there is a point \(T\) inside \(ABCDE\) with \(TB=TD\), \(TC=TE\) and \(\angle ABT = \angle TEA\). Let line \(AB\) intersect lines \(CD\) and \(CT\) at points \(P\) and \(Q\), respectively. Assume that the points \(P, B, A, Q\) occur on their line in that order. Let \(AE\) intersect lines \(CD\) and \(DT\) at points \(R\) and \(S\), respectively. Assume that points \(R, E, A, S\) occur on their line in that order. Prove that the points \(P, S, Q, R\) lie on a circle.	
-IMO 2022/5	0	N/A		N	Find all triples \((a, b, p)\) of positive integers with \(p\) prime and $$a^p=b!+p.$$	
-IMO 2022/6	0	N/A		C	Let \(n\) be a positive integer. A <i>Nordic square</i> is an \(n\times n\) board containing all the integers from \(1\) to \(n^2\) so that each cell contains exactly one number. Two different cells are considered adjacent if they share a common side. Every cell that is adjacent only to cells containing larger numbers is called a <i>valley</i>. An <i>uphill path</i> is a sequence of one or more cells such that: <ul><li>the first cell in the sequence is a valley;</li><li>each subsequent cell in the sequence is adjacent to the previous cell, and</li><li>the numbers written in the cells in the sequence are in increasing order.</li></ul> Find, as a function of \(n\), the smallest possible total number of uphill paths in a Nordic square.	
-IMO 2021/1	0	N/A		N	Let \(n\geqslant 100\) be an integer. Ivan writes the numbers \(n, n+1, \dots, 2n\) each on different cards. He then shuffles these \(n+1\) cards, and divides them into two piles. Prove that at least one of the piles contains two cards such that the sum of their numbers is a perfect square.	
-IMO 2021/2	0	N/A		A	Show that the inequality $$\sum_{i=1}^{n}\sum_{j=1}^{n} \sqrt{|x_i-x_j|}\leqslant \sum_{i=1}^{n}\sum_{j=1}^{n}\sqrt{|x_i+x_j|}$$ holds for all real numbers \(x_1, x_2, \dots, x_n\).	
-IMO 2021/3	0	N/A		G	Let \(D\) be an interior point of the acute triangle \(ABC\) with \(AB>AC\) so that \(\angle DAB=\angle CAD\). The point \(E\) on the segment \(AC\) satisfies \(\angle ADE=\angle BCD\), the point \(F\) on the segment \(AB\) satisfies \(\angle FDA=\angle DBC\), and the point \(X\) on the line \(AC\) satisfies \(CX=BX\). Let \(O_1\) and \(O_2\) be the circumcentres of the triangles \(ADC\) and \(EXD\), respectively. Prove that the lines \(BC\), \(EF\), \(O_1O_2\) are concurrent.	
-IMO 2021/4	0	N/A		G	Let \(\Gamma\) be a circle with centre \(I\), and \(ABCD\) be a convex quadrilateral such that each of the segments \(AB\), \(BC\), \(CD\) and \(DA\) is tangent to \(\Gamma\). Let \(\Omega\) be the circumcircle of the triangle \(AIC\). The extension of \(BA\) beyond \(A\) meets \(\Omega\) at \(X\), and the extension of \(BC\) beyond \(C\) meets \(\Omega\) at \(Z\). The extensions of \(AD\) and \(CD\) beyond \(D\) meet \(\Omega\) at \(Y\) and \(T\), respectively. Prove that $$AD+DT+TX+XA=CD+DY+YZ+ZC.$$	
-IMO 2021/5	0	N/A		C	Two squirrels, Bushy and Jumpy, have collected \(2021\) walnuts for the winter. Jumpy numbers the walnuts from \(1\) through \(2021\), and digs \(2021\) little holes in a circular pattern in the ground around their favourite tree. The next morning Jumpy notices that Bushy had placed one walnut into each hole, but had paid no attention to the numbering. Unhapy, Jumpy decides to reorder the walnuts by performing a sequence of \(2021\) moves. In the \(k\)-th move, Jumpy swaps the positions of the two walnuts adjacent to walnut \(k\). <br> Prove that there exists a value of \(k\) such that, on the \(k\)-th move, Jumpy swaps some walnuts \(a\) and \(b\) such that \(a < k < b\).	
-IMO 2021/6	0	N/A		A	Let \(m\geqslant 2\) be an integer, \(A\) be a finite set of (not necessarily positive) integers, and \(B_1, B_2, B_3, \dots, B_m\) be subsets of \(A\). Assume that for each \(k=1, 2, \dots, m\) the sum of the elements of \(B_k\) is \(m^k\). Prove that \(A\) contains at least \(m/2\) elements.	
-IMO 2020/1	0	N/A		G	Consider the convex quadrilateral \(ABCD\). The point \(P\) is in the interior of \(ABCD\). The following ratio equalities hold: $$\angle PAD : \angle PBA : \angle DPA = 1 : 2 : 3 = \angle CBP : \angle BAP : \angle BPC.$$ Prove that the following three lines meet in a point: the internal bisectors of angles \(\angle ADP\) and \(\angle PCB\) and the perpendicular bisector of segment \(AB\).	
-IMO 2020/2	0	N/A		A	The real numbers \(a, b, c, d\) are such that \(a\geq b\geq c\geq d > 0\) and \(a+b+c+d=1\). Prove that $$(a+2b+3c+4d)a^ab^bc^cd^d < 1.$$	
-IMO 2020/3	0	N/A		C	There are \(4n\) pebbles of weights \(1, 2, 3, \dots, 4n\). Each pebble is coloured in one of \(n\) colours and there are four pebbles of each colour. Show that we can arrange the pebbles into two piles so that the following two conditions are both satisfied: <ul><li>The total weights of both piles are the same.</li><li>Each pile contains two pebbles of each colour.</li></ul>	
-IMO 2020/4	0	N/A		C	There is an integer \(n>1\). There are \(n^2\) stations on a slope of a mountain, all at different altitudes. Each of two cable car companies, \(A\) and \(B\), operates \(k\) cable cars; each cable car provides a transfer from one of the stations to a higher one (with no intermediate stops). The \(k\) cable cars of \(A\) have \(k\) different starting points and \(k\) different finishing points, and a cable car which starts higher also finishes higher. The same conditions hold for \(B\). We say that two stations are <i>linked</i> by a company if one can start from the lower station and reach the higher one by using one or more cars of that company (no other movements between stations are allowed). <br> Determine the smallest positive integer \(k\) for which one can guarantee that there are two stations that are linked by both companies.	
-IMO 2020/5	0	N/A		N	A deck of \(n>1\) cards is given. A positive integer is written on each card. The deck has the property that the arithmetic mean of the numbers on each pair of cards is also the goemetric mean of the numbers on some collection of one or more cards. <br> For which \(n\) does it follow that the numbers on the cards are all equal?	
-IMO 2020/6	0	N/A		G	Prove that there exists a positive constant \(c\) such that the following statement is true: <br> Conisder an integer \(n>1\), and a set \(\mathcal{S}\) of \(n\) points in the plane such that the distance between any two different points in \(\mathcal{S}\) is at least \(1\). It follow that there is a line \(\ell\) separating \(\mathcal{S}\) such that the distance from any point of \(\mathcal{S}\) to \(\ell\) is at least \(cn^{-1/3}\). <br> (A line \(\ell\) <i>separates</i> a set of points \(\mathcal{S}\) if some segment joining two points in \(\mathcal{S}\) crosses \(\ell\).) <br>  <br> Note. Weaker results with \(cn^{-1/3}\) replaced by \(cn^{-\alpha}\) may be awarded points depending on the value of the constant \(\alpha > 1/3\).	
-IMO 2019/1	0	N/A		A	Let \(\mathbb{Z}\) be the set of integers. Determine all functions \(f:\mathbb{Z}\rightarrow\mathbb{Z}\) such that, for all integers \(a\) and \(b\), $$f(2a)+2f(b)=f(f(a+b)).$$	
-IMO 2019/2	0	N/A		G	In triangle \(ABC\), point \(A_1\) lies on side \(BC\) and point \(B_1\) lies on side \(AC\). Let \(P\) and \(Q\) be points on segments \(AA_1\) and \(BB_1\), respectively, such that \(PQ\) is parallel to \(AB\). Let \(P_1\) be a point on line \(PB_1\), such that \(B_1\) lies strictly between \(P\) and \(P_1\), and \(\angle PP_1C = \angle BAC\). Similarly, let \(Q_1\) be a point on line \(QA_1\), such that \(A_1\) lies strictly between \(Q\) and \(Q_1\), and \(\angle CQ_1Q=\angle CBA\). <br> <br> Prove that points \(P\), \(Q\), \(P_1\) and \(Q_1\) are concyclic.	
-IMO 2019/3	0	N/A		C	A social network has \(2019\) users, some pairs of whom are friends. whenever user \(A\) is friends with user \(B\), user \(B\) is also friends with user \(A\). Events of the following kind may happen repeatedly, one at a time: <br> <br> Three users \(A\), \(B\), and \(C\) such that \(A\) is friends with both \(B\) and \(C\), but \(B\) and \(C\) are not friends, change their friendship statuses such that \(B\) and \(C\) are now friends, but \(A\) is no longer friends with \(B\), and no longer friends with \(C\). All other friendship statuses are unchanged. Initially, \(1010\) users have \(1009\) friends each, and \(1009\) users have \(1010\) friends each. <br> <br> Prove that there exists a sequence of such events after which each user is friends with at most one other user.	
-IMO 2019/4	0	N/A		N	Find all pairs \((k, n)\) of positive integers such that $$k!=(2^n-1)(2^n-2)(2^n-4)\dots(2^n-2^{n-1}).$$	
-IMO 2019/5	0	N/A		C	The Bank of Bath issues coins with an \(H\) on one side and a \(T\) on the other. Harry has \(n\) of these coins arranged in a line from left to right. He repeatedly performs the following operation: if there are exactly \(k > 0\) coins showing \(H\), then he turns over the \(k\)<sup>th</sup> coin from the left; otherwise, all coins show \(T\) and he stops. For example, if \(n=3\) the process starting with the configuration \(THT\) would be \(THT\rightarrow HHT\rightarrow HTT\rightarrow TTT\), which stops after three operations. <br> <br> (a) Show that, for each initial configuration, Harry stops after a finite number of operations. <br> <br> (b) For each initial configuration \(C\), let \(L(C)\) be the number of operations before Harry stops. For example, \(L(THT)=3\) and \(L(TTT)=0\). Determine the average value of \(L(C)\) over all \(2^n\) possible initial configurations \(C\).	
-IMO 2019/6	0	N/A		G	Let \(I\) be the incentre of acute triangle \(ABC\) with \(AB\neq AC\). The incircle \(\omega\) of \(ABC\) is tangent to sides \(BC\), \(CA\), and \(AB\) at \(D\), \(E\), and \(F\), respectively. The line through \(D\) perpendicular to \(EF\) meets \(\omega\) again at \(R\). Line \(AR\) meets \(\omega\) again at \(P\). The circumcircles of triangles \(PCE\) and \(PBF\) meet again at \(Q\). <br> <br> Prove that lines \(DI\) and \(PQ\) meet on the line through \(A\) perpendicular to \(AI\).	
-IMO 2018/1	0	N/A		G	Let \(\Gamma\) be the circumcircle of acute-angled triangle \(ABC\). Points \(D\) and \(E\) lie on segments \(AB\) and \(AC\), respectively, such that \(AD=AE\). The perpendicular bisectors of \(BD\) and \(CE\) intersect the minor arcs \(AB\) and \(AC\) of \(\Gamma\) at points \(F\) and \(G\), respectively. Prove that the lines \(DE\) and \(FG\) are parallel (or are the same line).	
-IMO 2018/2	0	N/A		A	Find all integers \(n\geq 3\) for which there exist real numbers \(a_1, a_2, \dots, a_{n+2}\), such that \(a_{n+1}=a_1\) and \(a_{n+2}=a_2\), and $$a_ia_{i+1}+1=a_{i+2}$$ for \(i=1, 2, \dots, n\).	
-IMO 2018/3	0	N/A		C	An <i>anti-Pascal triangle</i> is an equilateral triangle array of numbers such that, except for the numbers in the bottom row, each number is the absolute value of the difference of the two numbers immediately below it. <br> <br> Does there exist an anti-Pascal triangle with \(2018\) rows which contains every integer from \(1\) to \(1+2+\dots+2018\)?	
-IMO 2018/4	0	N/A		C	A <i>site</i> is any point \((x,y)\) in the plane such that \(x\) and \(y\) are both positive integers less than or equal to \(20\). <br> Initially, each of the \(400\) sites is unoccupied. Amy and Ben take turns placing stones with Amy going first. On her turn, Amy places a new red stone on an unoccupied site such that the distance between any two sites occupied by red stones is not equal to \(\sqrt{5}\). On his turn, Ben places a new blue stone on any unoccupied site. (A site occupied by a blue stone is allowed to be at any distance from any other occupied site.) They stop as soon as a player cannot place a stone. <br> Find the greatest \(K\) such that Amy can ensure that she places at least \(K\) red stones, no matter how Ben places his stones.	
-IMO 2018/5	0	N/A		N	Let \(a_1, a_2, \dots\) be an infinite sequence of positive integers. Suppose that there is an integer \(N>1\) such that, for each \(n\geq N\), the number $$\frac{a_1}{a_2}+\frac{a_2}{a_3}+\dots+\frac{a_{n-1}}{a_n}+\frac{a_n}{a_1}$$ is an integer. Prove that there is a positive integer \(M\) such that \(a_m=a_{m+1}\) for all \(m\geq M\).	
-IMO 2018/6	0	N/A		G	A convex quadrilateral \(ABCD\) satisfies \(AB\cdot CD=BC\cdot DA\). Point \(X\) lies inside \(ABCD\) so that $$\angle XAB = \angle XCD \quad \textrm{and} \quad \angle XBC = \angle XDA.$$ Prove that \(\angle BXA+\angle DXC = 180^{\circ}\)	
-IMO 2017/1	0	N/A		N		
-IMO 2017/2	0	N/A		A		
-IMO 2017/3	0	N/A		C		
-IMO 2017/4	0	N/A		G		
-IMO 2017/5	0	N/A		C		
-IMO 2017/6	0	N/A		A		
-IMO 2016/1	0	N/A		G		
-IMO 2016/2	0	N/A		C		
-IMO 2016/3	0	N/A		N		
-IMO 2016/4	0	N/A		N		
-IMO 2016/5	0	N/A		A		
-IMO 2016/6	0	N/A		C		
-IMO 2015/1	0	N/A		C		
-IMO 2015/2	0	N/A		N		
-IMO 2015/3	0	N/A		G		
-IMO 2015/4	0	N/A		G		
-IMO 2015/5	0	N/A		A		
-IMO 2015/6	0	N/A		C		
-IMO 2014/1	0	N/A		A		
-IMO 2014/2	0	N/A		C		
-IMO 2014/3	0	N/A		G		
-IMO 2014/4	0	N/A		G		
-IMO 2014/5	0	N/A		N		
-IMO 2014/6	0	N/A		C		
+Source;Computational?;Answer;Difficulty;Topic;Problem;Solution
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+;;;;;;
+IMO 2023/1;0;N/A;;N;Determine all composite integers \(n > 1\) that satisfy the following property: if \(d_1, d_2, \dots, d_k\) are all the positive divisors of \(n\) with \(1=d_1 < d_2 < \dots < d_k =n \), then \(d_i\) divides \(d_{i+1}+d_{i+2}\) for every \(1\leqslant i\leqslant k-2\).;
+IMO 2023/2;0;N/A;;G;Let \(ABC\) be an acute-angled triangle with \(AB < AC\). Let \(\Omega\) be the circumcircle of \(ABC\). Let \(S\) be the midpoint of the arc \(CB\) of \(\Omega\) containing \(A\). The perpendicular from \(A\) to \(BC\) meets \(BS\) at \(D\) and meets \(\Omega\) again at \(E\neq A\). The line through \(D\) parallel to \(BC\) meets line \(BE\) at \(L\). Denote the circumcircle of triangle \(BDL\) by \(\omega\). Let \(\omega\) meet \(\Omega\) again at \(P\neq B\). <br> Prove that the line tangent to \(\omega\) at \(P\) meets line \(BS\) on the internal angle bisector of \(\angle BAC\).;
+IMO 2023/3;0;N/A;;A;For each integer \(k\geqslant 2\), determine all infinite sequences of positive integers \(a_1, a_2, \dots\) for which there exists a polynomial \(P\) of the form \(P(x) = x^k+c_{k-1}x^{k-1}+\dots+c_1x+c_0\), where \(c_0, c_1, \dots, c_{k-1}\) are non-negative integers, such that $$P(a_n)=a_{n+1}a_{n+2}\dots a_{n+k}$$ for every integer \(n\geqslant 1\).;
+IMO 2023/4;0;N/A;;A;Let \(x_1, x_2, \dots, x_{2023}\) be pairwise different positive real numbers such that $$a_n=\sqrt{(x_1+x_2+\dots+x_n)\left(\frac{1}{x_1}+\frac{1}{x_2}+\dots+\frac{1}{x_n}\right)}$$ is an integer for every \(n = 1, 2, \dots, 2023\). Prove that \(a_{2023}\geqslant 3034\).;
+IMO 2023/5;0;N/A;;C;Let \(n\) be a positive integer. A <i>Japanese triangle</i> consists of \(1+2+\dots+n\) circles arranged in an equilateral triangular shape such that for each \(i = 1, 2, \dots, n\), the \(i\)<sup>th</sup> row contains exactly \(i\) circles, exactly one of which is coloured red. A <i>ninja path</i> in a Japanese triangle is a sequence of \(n\) circles obtained by starting in the top row, then repeatedly going from a circle to one of the two circles immediately below it and finishing in the bottom row. <br> In terms of \(n\), find the greatest \(k\) such that in each Japanese triangle there is a ninja path containing at least \(k\) red circles.;
+IMO 2023/6;0;N/A;;G;Let \(ABC\) be an equilateral triangle. Let \(A_1, B_1, C_1\) be interior points of \(ABC\) such that \(BA_1=A_1C\), \(CB_1=B_1A\), \(AC_1=C_1B\), and $$\angle BA_1C + \angle CB_1A + \angle AC_1B = 480^{\circ}.$$ Let \(BC_1\) and \(CB_1\) meet at \(A_2\), let \(CA_1\) and \(AC_1\) meet at \(B_2\), and let \(AB_1\) and \(BA_1\) meet at \(C_2\). Prove that if triangle \(A_1B_1C_1\) is scalene, then the three circumcircles of triangles \(AA_1A_2\), \(BB_1B_2\) and \(CC_1C_2\) all pass through two common points. <br> <br> (Note: a scalene triangle is one where no two sides have equal length.);
+IMO 2022/1;0;N/A;;C;The Bank of Oslo issues two types of coin: aluminium (denoted \(A\)) and bronze (denoted \(B\)). Marianne has \(n\) aluminium coins and \(n\) bronze coins, arragned in a row in some arbitrary initial order. A <i>chain</i> is any subsequence of consecutive coins of the same type. Given a fixed positive integer \(k\leqslant 2n\), Marianne repeatedly performs the following operation: she identifies the longest chain containing the \(k\)<sup>th</sup> coin from the left, and moves all coins in that chain to the left end of the row. For example, if \(n=4\) and \(k=4\), the process starting from the ordering \(AABBBABA\) would be $$AAB\underline{B}BABA\rightarrow BBB\underline{A}AABA\rightarrow AAA\underline{B}BBBA\rightarrow BBB\underline{B}AAAA\rightarrow BBB\underline{B}AAAA\rightarrow\dots .$$ Find all pairs \((n,k)\) with \(1\leqslant k\leqslant 2n\) such that for every initial ordering, at some moment during the process, the leftmost \(n\) coins will all be of the same type.;
+IMO 2022/2;0;N/A;;A;Let \(\mathbb{R}^+\) denote the set of positive real numbers. Find all functions \(f:\mathbb{R}^+\rightarrow\mathbb{R}^+\) such that for each \(x\in\mathbb{R}^+\), there is exactly one \(y\in\mathbb{R}^+\) satisfying $$xf(y)+yf(x)\leqslant 2.$$;
+IMO 2022/3;0;N/A;;N;Let \(k\) be a positive integer and let \(S\) be a finite set of odd prime numbers. Prove that there is at most one way (up to rotation and reflection) to place the elements of \(S\) around a circle such that the product of any two neighbours is of the form \(x^2+x+k\) for some positive integer \(x\).;
+IMO 2022/4;0;N/A;;G;Let \(ABCDE\) be a convex pentagon such that \(BC=DE\). Assume that there is a point \(T\) inside \(ABCDE\) with \(TB=TD\), \(TC=TE\) and \(\angle ABT = \angle TEA\). Let line \(AB\) intersect lines \(CD\) and \(CT\) at points \(P\) and \(Q\), respectively. Assume that the points \(P, B, A, Q\) occur on their line in that order. Let \(AE\) intersect lines \(CD\) and \(DT\) at points \(R\) and \(S\), respectively. Assume that points \(R, E, A, S\) occur on their line in that order. Prove that the points \(P, S, Q, R\) lie on a circle.;
+IMO 2022/5;0;N/A;;N;Find all triples \((a, b, p)\) of positive integers with \(p\) prime and $$a^p=b!+p.$$;
+IMO 2022/6;0;N/A;;C;Let \(n\) be a positive integer. A <i>Nordic square</i> is an \(n\times n\) board containing all the integers from \(1\) to \(n^2\) so that each cell contains exactly one number. Two different cells are considered adjacent if they share a common side. Every cell that is adjacent only to cells containing larger numbers is called a <i>valley</i>. An <i>uphill path</i> is a sequence of one or more cells such that: <ul><li>the first cell in the sequence is a valley;</li><li>each subsequent cell in the sequence is adjacent to the previous cell, and</li><li>the numbers written in the cells in the sequence are in increasing order.</li></ul> Find, as a function of \(n\), the smallest possible total number of uphill paths in a Nordic square.;
+IMO 2021/1;0;N/A;;N;Let \(n\geqslant 100\) be an integer. Ivan writes the numbers \(n, n+1, \dots, 2n\) each on different cards. He then shuffles these \(n+1\) cards, and divides them into two piles. Prove that at least one of the piles contains two cards such that the sum of their numbers is a perfect square.;
+IMO 2021/2;0;N/A;;A;Show that the inequality $$\sum_{i=1}^{n}\sum_{j=1}^{n} \sqrt{|x_i-x_j|}\leqslant \sum_{i=1}^{n}\sum_{j=1}^{n}\sqrt{|x_i+x_j|}$$ holds for all real numbers \(x_1, x_2, \dots, x_n\).;
+IMO 2021/3;0;N/A;;G;Let \(D\) be an interior point of the acute triangle \(ABC\) with \(AB>AC\) so that \(\angle DAB=\angle CAD\). The point \(E\) on the segment \(AC\) satisfies \(\angle ADE=\angle BCD\), the point \(F\) on the segment \(AB\) satisfies \(\angle FDA=\angle DBC\), and the point \(X\) on the line \(AC\) satisfies \(CX=BX\). Let \(O_1\) and \(O_2\) be the circumcentres of the triangles \(ADC\) and \(EXD\), respectively. Prove that the lines \(BC\), \(EF\), \(O_1O_2\) are concurrent.;
+IMO 2021/4;0;N/A;;G;Let \(\Gamma\) be a circle with centre \(I\), and \(ABCD\) be a convex quadrilateral such that each of the segments \(AB\), \(BC\), \(CD\) and \(DA\) is tangent to \(\Gamma\). Let \(\Omega\) be the circumcircle of the triangle \(AIC\). The extension of \(BA\) beyond \(A\) meets \(\Omega\) at \(X\), and the extension of \(BC\) beyond \(C\) meets \(\Omega\) at \(Z\). The extensions of \(AD\) and \(CD\) beyond \(D\) meet \(\Omega\) at \(Y\) and \(T\), respectively. Prove that $$AD+DT+TX+XA=CD+DY+YZ+ZC.$$;
+IMO 2021/5;0;N/A;;C;Two squirrels, Bushy and Jumpy, have collected \(2021\) walnuts for the winter. Jumpy numbers the walnuts from \(1\) through \(2021\), and digs \(2021\) little holes in a circular pattern in the ground around their favourite tree. The next morning Jumpy notices that Bushy had placed one walnut into each hole, but had paid no attention to the numbering. Unhapy, Jumpy decides to reorder the walnuts by performing a sequence of \(2021\) moves. In the \(k\)-th move, Jumpy swaps the positions of the two walnuts adjacent to walnut \(k\). <br> Prove that there exists a value of \(k\) such that, on the \(k\)-th move, Jumpy swaps some walnuts \(a\) and \(b\) such that \(a < k < b\).;
+IMO 2021/6;0;N/A;;A;Let \(m\geqslant 2\) be an integer, \(A\) be a finite set of (not necessarily positive) integers, and \(B_1, B_2, B_3, \dots, B_m\) be subsets of \(A\). Assume that for each \(k=1, 2, \dots, m\) the sum of the elements of \(B_k\) is \(m^k\). Prove that \(A\) contains at least \(m/2\) elements.;
+IMO 2020/1;0;N/A;;G;Consider the convex quadrilateral \(ABCD\). The point \(P\) is in the interior of \(ABCD\). The following ratio equalities hold: $$\angle PAD : \angle PBA : \angle DPA = 1 : 2 : 3 = \angle CBP : \angle BAP : \angle BPC.$$ Prove that the following three lines meet in a point: the internal bisectors of angles \(\angle ADP\) and \(\angle PCB\) and the perpendicular bisector of segment \(AB\).;
+IMO 2020/2;0;N/A;;A;The real numbers \(a, b, c, d\) are such that \(a\geq b\geq c\geq d > 0\) and \(a+b+c+d=1\). Prove that $$(a+2b+3c+4d)a^ab^bc^cd^d < 1.$$;
+IMO 2020/3;0;N/A;;C;There are \(4n\) pebbles of weights \(1, 2, 3, \dots, 4n\). Each pebble is coloured in one of \(n\) colours and there are four pebbles of each colour. Show that we can arrange the pebbles into two piles so that the following two conditions are both satisfied: <ul><li>The total weights of both piles are the same.</li><li>Each pile contains two pebbles of each colour.</li></ul>;
+IMO 2020/4;0;N/A;;C;There is an integer \(n>1\). There are \(n^2\) stations on a slope of a mountain, all at different altitudes. Each of two cable car companies, \(A\) and \(B\), operates \(k\) cable cars; each cable car provides a transfer from one of the stations to a higher one (with no intermediate stops). The \(k\) cable cars of \(A\) have \(k\) different starting points and \(k\) different finishing points, and a cable car which starts higher also finishes higher. The same conditions hold for \(B\). We say that two stations are <i>linked</i> by a company if one can start from the lower station and reach the higher one by using one or more cars of that company (no other movements between stations are allowed). <br> Determine the smallest positive integer \(k\) for which one can guarantee that there are two stations that are linked by both companies.;
+IMO 2020/5;0;N/A;;N;A deck of \(n>1\) cards is given. A positive integer is written on each card. The deck has the property that the arithmetic mean of the numbers on each pair of cards is also the goemetric mean of the numbers on some collection of one or more cards. <br> For which \(n\) does it follow that the numbers on the cards are all equal?;
+IMO 2020/6;0;N/A;;G;Prove that there exists a positive constant \(c\) such that the following statement is true: <br> Conisder an integer \(n>1\), and a set \(\mathcal{S}\) of \(n\) points in the plane such that the distance between any two different points in \(\mathcal{S}\) is at least \(1\). It follow that there is a line \(\ell\) separating \(\mathcal{S}\) such that the distance from any point of \(\mathcal{S}\) to \(\ell\) is at least \(cn^{-1/3}\). <br> (A line \(\ell\) <i>separates</i> a set of points \(\mathcal{S}\) if some segment joining two points in \(\mathcal{S}\) crosses \(\ell\).) <br>  <br> Note. Weaker results with \(cn^{-1/3}\) replaced by \(cn^{-\alpha}\) may be awarded points depending on the value of the constant \(\alpha > 1/3\).;
+IMO 2019/1;0;N/A;;A;Let \(\mathbb{Z}\) be the set of integers. Determine all functions \(f:\mathbb{Z}\rightarrow\mathbb{Z}\) such that, for all integers \(a\) and \(b\), $$f(2a)+2f(b)=f(f(a+b)).$$;
+IMO 2019/2;0;N/A;;G;In triangle \(ABC\), point \(A_1\) lies on side \(BC\) and point \(B_1\) lies on side \(AC\). Let \(P\) and \(Q\) be points on segments \(AA_1\) and \(BB_1\), respectively, such that \(PQ\) is parallel to \(AB\). Let \(P_1\) be a point on line \(PB_1\), such that \(B_1\) lies strictly between \(P\) and \(P_1\), and \(\angle PP_1C = \angle BAC\). Similarly, let \(Q_1\) be a point on line \(QA_1\), such that \(A_1\) lies strictly between \(Q\) and \(Q_1\), and \(\angle CQ_1Q=\angle CBA\). <br> <br> Prove that points \(P\), \(Q\), \(P_1\) and \(Q_1\) are concyclic.;
+IMO 2019/3;0;N/A;;C;A social network has \(2019\) users, some pairs of whom are friends. Whenver user \(A\) is friends with user \(B\), user \(B\) is also friends with user \(A\). Events of the following kind may happen repeatedly, one at a time: <br> <br> Three users \(A\), \(B\), and \(C\) such that \(A\) is friends with both \(B\) and \(C\), but \(B\) and \(C\) are not friends, change their friendship statuses such that \(B\) and \(C\) are now friends, but \(A\) is no longer friends with \(B\), and no longer friends with \(C\). All other friendship statuses are unchanged. Initially, \(1010\) users have \(1009\) friends each, and \(1009\) users have \(1010\) friends each. <br> <br> Prove that there exists a sequence of such events after which each user is friends with at most one other user.;
+IMO 2019/4;0;N/A;;N;Find all pairs \((k, n)\) of positive integers such that $$k!=(2^n-1)(2^n-2)(2^n-4)\dots(2^n-2^{n-1}).$$;
+IMO 2019/5;0;N/A;;C;The Bank of Bath issues coins with an \(H\) on one side and a \(T\) on the other. Harry has \(n\) of these coins arranged in a line from left to right. He repeatedly performs the following operation: if there are exactly \(k > 0\) coins showing \(H\), then he turns over the \(k\)<sup>th</sup> coin from the left; otherwise, all coins show \(T\) and he stops. For example, if \(n=3\) the process starting with the configuration \(THT\) would be \(THT\rightarrow HHT\rightarrow HTT\rightarrow TTT\), which stops after three operations. <br> <br> (a) Show that, for each initial configuration, Harry stops after a finite number of operations. <br> <br> (b) For each initial configuration \(C\), let \(L(C)\) be the number of operations before Harry stops. For example, \(L(THT)=3\) and \(L(TTT)=0\). Determine the average value of \(L(C)\) over all \(2^n\) possible initial configurations \(C\).;
+IMO 2019/6;0;N/A;;G;Let \(I\) be the incentre of acute triangle \(ABC\) with \(AB\neq AC\). The incircle \(\omega\) of \(ABC\) is tangent to sides \(BC\), \(CA\), and \(AB\) at \(D\), \(E\), and \(F\), respectively. The line through \(D\) perpendicular to \(EF\) meets \(\omega\) again at \(R\). Line \(AR\) meets \(\omega\) again at \(P\). The circumcircles of triangles \(PCE\) and \(PBF\) meet again at \(Q\). <br> <br> Prove that lines \(DI\) and \(PQ\) meet on the line through \(A\) perpendicular to \(AI\).;
+IMO 2018/1;0;N/A;;G;Let \(\Gamma\) be the circumcircle of acute-angled triangle \(ABC\). Points \(D\) and \(E\) lie on segments \(AB\) and \(AC\), respectively, such that \(AD=AE\). The perpendicular bisectors of \(BD\) and \(CE\) intersect the minor arcs \(AB\) and \(AC\) of \(\Gamma\) at points \(F\) and \(G\), respectively. Prove that the lines \(DE\) and \(FG\) are parallel (or are the same line).;
+IMO 2018/2;0;N/A;;A;Find all integers \(n\geq 3\) for which there exist real numbers \(a_1, a_2, \dots, a_{n+2}\), such that \(a_{n+1}=a_1\) and \(a_{n+2}=a_2\), and $$a_ia_{i+1}+1=a_{i+2}$$ for \(i=1, 2, \dots, n\).;
+IMO 2018/3;0;N/A;;C;An <i>anti-Pascal triangle</i> is an equilateral triangle array of numbers such that, except for the numbers in the bottom row, each number is the absolute value of the difference of the two numbers immediately below it. <br> <br> Does there exist an anti-Pascal triangle with \(2018\) rows which contains every integer from \(1\) to \(1+2+\dots+2018\)?;
+IMO 2018/4;0;N/A;;C;A <i>site</i> is any point \((x,y)\) in the plane such that \(x\) and \(y\) are both positive integers less than or equal to \(20\). <br> Initially, each of the \(400\) sites is unoccupied. Amy and Ben take turns placing stones with Amy going first. On her turn, Amy places a new red stone on an unoccupied site such that the distance between any two sites occupied by red stones is not equal to \(\sqrt{5}\). On his turn, Ben places a new blue stone on any unoccupied site. (A site occupied by a blue stone is allowed to be at any distance from any other occupied site.) They stop as soon as a player cannot place a stone. <br> Find the greatest \(K\) such that Amy can ensure that she places at least \(K\) red stones, no matter how Ben places his stones.;
+IMO 2018/5;0;N/A;;N;Let \(a_1, a_2, \dots\) be an infinite sequence of positive integers. Suppose that there is an integer \(N>1\) such that, for each \(n\geq N\), the number $$\frac{a_1}{a_2}+\frac{a_2}{a_3}+\dots+\frac{a_{n-1}}{a_n}+\frac{a_n}{a_1}$$ is an integer. Prove that there is a positive integer \(M\) such that \(a_m=a_{m+1}\) for all \(m\geq M\).;
+IMO 2018/6;0;N/A;;G;A convex quadrilateral \(ABCD\) satisfies \(AB\cdot CD=BC\cdot DA\). Point \(X\) lies inside \(ABCD\) so that $$\angle XAB = \angle XCD \quad \textrm{and} \quad \angle XBC = \angle XDA.$$ Prove that \(\angle BXA+\angle DXC = 180^{\circ}\).;
+IMO 2017/1;0;N/A;;N;For each integer \(a_0 > 1\), define the sequence \(a_0, a_1, a_2, \dots\) by: $$a_{n+1}=\begin{cases}\sqrt{a_n} & \textrm{if }\sqrt{a_n}\textrm{ is an integer} \\ a_n+3 &  \textrm{otherwise,} \end{cases}\quad \textrm{for each }n\geqslant 0.$$ Determine all values of \(a_0\) for which there is a number \(A\) for infinitely many values of \(n\).;
+IMO 2017/2;0;N/A;;A;Let \(\mathbb{R}\) be the set of real numbers. Determine all functions \(f:\mathbb{R}\rightarrow\mathbb{R}\) such that, for all real numbers \(x\) and \(y\), $$f(f(x)f(y))+f(x+y)=f(xy).$$;
+IMO 2017/3;0;N/A;;C;A hunter and an invisible rabbit play a game in the Euclidean plane. The rabbit's starting point, \(A_0\), and the hunter's starting point, \(B_0\), are the same. After \(n-1\) rounds of the game, the rabbit is at point \(A_{n-1}\) and the hunter is at point \(B_{n-1}\). In the \(n\)<sup>th</sup> round of the game, three things occur in order. <ol><li>The rabbit moves invisibly to a point \(A_n\) such that the distance between \(A_{n-1}\) and \(A_n\) is exactly \(1\). </li><li>A tracking device reports a point \(P_n\) to the hunter. The only guarantee provided by the tracking device to the hunter is that the distance between \(P_n\) and \(A_n\) is at most \(1\).</li><li>The hunter moves visibly to a point \(B_n\) such that the distance between \(B_{n-1}\) and \(B_n\) is exactly \(1\).</li></ol> Is it always possible, no matter how the rabbit moves, and no matter what points are reported by the tracking device, for the hunter to choose her moves so that after \(10^9\) rounds she can ensure that the distance between her and the rabbit is at most \(100\)?;
+IMO 2017/4;0;N/A;;G;Let \(R\) and \(S\) be different points on a circle \(\Omega\) such that \(RS\) is not a diameter. Let \(\ell\) be the tangent line to \(\Omega\) at \(R\). Point \(T\) is such that \(S\) is the midpoint of the line segment \(RT\). Point \(J\) is chosen on the shorter arc \(RS\) of \(\Omega\) so that the circumcircle \(\Gamma\) of triangle \(JST\) intersects \(\ell\) at two distinct points. Let \(A\) be the common point of \(\Gamma\) and \(\ell\) that is closer to \(R\). Line \(AJ\) meets \(\Omega\) again at \(K\). Prove that the line \(KT\) is tangent to \(\Gamma\).;
+IMO 2017/5;0;N/A;;C;An integer \(N\geqslant 2\) is given. A collection of \(N(N+1)\) soccer players, no two of whom are of the same height, stand in a row. Sir Alex wants to remove \(N(N-1)\) players from this row leaving a new row of \(2N\) players in which the following \(N\) conditions hold: <ul><li>no one stands between the two tallest players,</li><li>no one stands between the third and fourth tallest players,</li><li>...</li><li>no one stands between the two shortest players.</li></ul> Show that this is always possible.;
+IMO 2017/6;0;N/A;;A;An ordered pair \((x,y)\) of integers is a <i>primitive point</i> if the greatest common divisor of \(x\) and \(y\) is \(1\). Given a finite set \(S\) of primitive points, prove that there exist a positive integer \(n\) and integers \(a_0, a_1, \dots, a_n\) such that, for every \((x, y)\) in \(S\), we have: $$a_0x^n+a_1x^{n-1}y+a_2x^{n-2}y^2+\dots+a_{n-1}xy^{n-1}+a_ny^n=1.$$;
+IMO 2016/1;0;N/A;;G;Triangle \(BCF\) has a right angle at \(B\). Let \(A\) be the point on line \(CF\) such that \(FA=FB\) and \(F\) lies between \(A\) and \(C\). Point \(D\) is chosen such that \(DA=DC\) and \(AC\) is the bisector of \(\angle DAB\). Point \(E\) is chosen such that \(EA=ED\) and \(AD\) is the bisector of \(\angle EAC\). Let \(M\) be the midpoint of \(CF\). Let \(X\) be the point such that \(AMXE\) is a parallelogram (where \(AM\parallel EX\) and \(AE\parallel MX\)). Prove that the lines \(BD\), \(FX\), and \(ME\) are concurrent.;
+IMO 2016/2;0;N/A;;C;Find all positive integers \(n\) for which each cell of an \(n\times n\) table can be filled with one of the letters \(I\), \(M\), \(O\) in such a way that: <ul><li>in each row and each column, one third of the entries are \(I\), one third are \(M\) and one third are \(O\); and</li><li>in any diagonal, if the number of entries on the diagonal is a multiple of three, then one third of the entires are \(I\), one third are \(M\) and one third are \(O\).</li></ul> <b>Note</b>: The rows and columns of an \(n\times n\) table are each labelled \(1\) to \(n\) in a natural order. Thus each cell corresponds to a pair of positive integers \((i, j)\) with \(1\leqslant i, j\leqslant n\). For \(n > 1\), the table has \(4n-2\) <i>diagonals</i> of two types. A diagonal of the first type consists of all cells \((i, j)\) for which \(i+j\) is constant, and a diagonal of the second type consists of all cells \((i, j)\) for which \(i-j\) is a constant.;
+IMO 2016/3;0;N/A;;N;Let \(P=A_1A_2\dots A_k\) be a convex polygon in the plane. The vertices \(A_1, A_2, \dots, A_k\) have integral coordinates and lie on a circle. Let \(S\) be the area of \(P\). An odd positive integer \(n\) is given such that the squares of the side lengths of \(P\) are integers divisible by \(n\). Prove that \(2S\) is an integer divisible by \(n\).;
+IMO 2016/4;0;N/A;;N;A set of positive integers is called <i>fragrant</i> if it contains at least two elements and each of its elements has a prime factor in common with at least one of the other elements. Let \(P(n)=n^2+n+1\). What is the least possible value of the positive integer \(b\) such that there exists a non-negative integer \(a\) for which the set $$\{P(a+1), P(a+2), \dots, P(a+b)\}$$ is fragrant?;
+IMO 2016/5;0;N/A;;A;The equation $$(x-1)(x-2)\dots(x-2016)=(x-1)(x-2)\dots(x-2016)$$ is written on the board, with \(2016\) linear factors on each side. What is the least possible value of \(k\) for which it is possible to erase exactly \(k\) of these \(4032\) linear factors so that at least one factor remains on each side and the resulting equation has no real solutions?;
+IMO 2016/6;0;N/A;;C;There are \(n\geqslant 2\) line segments in the plane such that every two segments cross, and no three segments meet at a point. Geoff has to chose an endpoint of each segment and place a frog on it, facing the other endpoint. Then he will clap his hands \(n-1\) times. Every time he claps, each frog will immediately jump forward to the next intersection point on its segment. Frogs never change the direction of their jumps. Geoof wishes to place the frogs in such a way that no two of them will ever occupy the same intersection point at the same time. <br> <br> (a) Prove that Geoff can always fulfil his wish if \(n\) is odd. <br> <br> (b) Prove that Geoff can never fulfil his wish if \(n\) is even.;
+IMO 2015/1;0;N/A;;C;We say that a finite set \(\mathcal{S}\) of points in the plane is <i>balanced</i> if, for any two different points \(A\) and \(B\) in \(\mathcal{S}\), there is a point \(C\) such that \(AC=BC\). We say that \(\mathcal{S}\) is <i>centre-free</i> if for any three different points \(A\), \(B\) and \(C\) in \(\mathcal{S}\), there is no point \(P\) in \(\mathcal{S}\) such that \(PA=PB=PC\). <br> <br> (a) Show that for all integers \(n\geqslant 3\), there exists a balanced set consisting of \(n\) points. <br> <br> (b) Determine all integers \(n\geqslant 3\) for which there exists a balanced centre-free set consisting of \(n\) points.;
+IMO 2015/2;0;N/A;;N;Determine all triples \(a, b, c\) of positive integers such that each of the numbers $$ab-c, bc-a, ca-b$$ is a power of \(2\). <br> (<i>A power of \(2\) is an integer of the form \(2^n\), where \(n\) is a non-negative integer.</i>);
+IMO 2015/3;0;N/A;;G;Let \(ABC\) be an acute triangle with \(AB > AC\). Let \(\Gamma\) be its circumcircle, \(H\) its orthocentre, and \(F\) the foot of the altitude from \(A\). Let \(M\) be the midpoint of \(BC\). Let \(Q\) be the point on \(\Gamma\) such that \(\angle HQA=90^{\circ}\), and let \(K\) be the point of \(\Gamma\) such that \(\angle HKQ=90^{\circ}\). Assume that the points \(A\), \(B\), \(C\), \(K\) and \(Q\) are all different, and lie on \(\Gamma\) in this order. <br> <br> Prove that the circumcircles of triangles \(KQH\) and \(FKM\) are tangent to each other.;
+IMO 2015/4;0;N/A;;G;Triangle \(ABC\) has circumcircle \(\Omega\) and circumcentre \(O\). A circle \(\Gamma\) with centre \(A\) intersects the segment \(BC\) at points \(D\) and \(E\), such that \(B\), \(D\), \(E\) and \(C\) are all different and lie on line \(BC\) in this order. Let \(F\) and \(G\) be the points of intersection of \(\Gamma\) and \(\Omega\), such that \(A\), \(F\), \(B\), \(C\), \(G\) lie on \(\Omega\) in this order. Let \(K\) be the second point of intersection of the circumcircle of triangle \(BDF\) and the segment \(AB\). Let \(L\) be the second point of intersection of the circumcircle of triangle \(CGE\) and the segment \(CA\). <br> <br> Suppose that the lines \(FK\) and \(GL\) are different and itnersect at the point \(X\). Prove that \(X\) lies on the line \(AO\).;
+IMO 2014/5;0;N/A;;N;For each positive integer \(n\), the Bank of Cape Town issues coins of denomination \(\frac{1}{n}\). Given a finite collection of such coins (of not necessarily different denominations) with total value at most \(99+\frac{1}{2}\), prove that it is possible to split this collection into \(100\) or fewer groups, such that each group has total value at most \(1\).;
+IMO 2014/6;0;N/A;;C;A set of lines in the plane is in <i>general position</i> if no two are parallel and no three pass through the same point. A set of lines in general position cuts the plane into regions, some of which have finite area; we call these its <i>finite regions</i>. Prove that for all sufficiently large \(n\), in any set of \(n\) lines in general position it is possible to colour at least \(\sqrt{n}\) of the lines blue in such a way that none of its finite regions has a complete blue boundary. <br> <br> <i>Note: </i> Results with \(\sqrt{n}\) replaced with \(c\sqrt{n}\) will be awarded points depending on the value of the constant \(c\).;
