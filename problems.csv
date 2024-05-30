@@ -33,12 +33,12 @@ IMO Prelim 2023/11;1;;;C;In a school there are \(2023\) students, numbered \(1\)
 IMO Prelim 2023/12;1;;;G;\(ABCD\) is a trapezium with \(AD\parallel BC\), \(AD > BC\) and \(AB = CD\). \(P\) is a point on the plane whose distance from \(A, B, C, D\) are \(1, 2, 3, 4\) respectively. Find \(AD:BC\).;
 IMO Prelim 2023/13;1;;;G;In \(\triangle ABC\), \(AC=\sqrt{3}AB\) and \(BC=2\). \(D\) is a point inside \(\triangle ABC\) such that \(\angle BDC = 90^{\circ}\), \(\angle DAC = 18^{\circ}\) and \(BD = 1\). Find \(\angle DAB\).;
 IMO Prelim 2023/14;1;;;C;In a country there are only four types of coins, of denominations \(74\), \(87\), \(111\) and \(124\) dollars respectively. In how many different ways can one pay exactly \(2023\) dollars using these coins?;
-IMO Prelim 2023/15;1;;;C;;
-IMO Prelim 2023/16;1;;;C;;
-IMO Prelim 2023/17;1;;;G;;
-IMO Prelim 2023/18;1;;;C;;
-IMO Prelim 2023/19;1;;;C;;
-IMO Prelim 2023/20;1;;;N;;
+IMO Prelim 2023/15;1;;;C;There is a \(3\times 3\) table and \(9\) cards printed with the numbers \(-4, -3, -2, -1, 0, 1, 2, 3, 4\). How many ways are there for these cards to be distributed to the cells of the table so that there is one card in each cell, and that the sum of the numbers of the three cards on each row, each column and each of the two diagonals of the table is non-negative?;
+IMO Prelim 2023/16;1;;;C;In a team game, \(12\) players stand at the \(12\) vertices of a regular \(12\)-sided polygon. Each player has a red flag and a blue flag, and then randomly put up one flag, all at the same time. If there are four players who put up flags of the same colour and whose positions form a rectangle, the team loses. Otherwise the team wins. What is the probability for the team to win?;
+IMO Prelim 2023/17;1;;;G;\(ABCD\) is a square. \(P\) is a point inside \(ABCD\) such that \(\angle APD + \angle BPC = 180^{\circ}\) and \(\angle BPC\) is acute. If \(PB = 3\) and \(PC = 4\), find \(BC\).;
+IMO Prelim 2023/18;1;;;C;In a chess tournament, there were \(n\) contestants and any two of them played at most one game against each other. Each contestant has played exactly \(100\) games. For any two contestants \(A\) and \(B\) who had played against each other, there were exactly \(50\) other participants who have played against both \(A\) and \(B\). On the other hand, for any two contestants \(C\) and \(D\) who had not played against each other, there were exactly \(4\) other participants who have played against both \(C\) and \(D\). Find the value of \(n\).;
+IMO Prelim 2023/19;1;;;C;There are \(20\) students in a class, numbered \(1\) to \(20\). They have taken a test with \(n\) questions. After the test, the teacher tried to pick some students to draft the solutions, and as such it is necessary that the picked students together can solve all questions. The teacher found that this can be only done by choosing all students whose class numbers are even, or all students whose class numbers are multiples of \(5\), or any combination that includes all students from one of the two groups mentioned above. Find the smallest possible value of \(n\).;
+IMO Prelim 2023/20;1;;;N;Let \(u, v, w\) be positive integers, with \(v\) and \(w\) not exceeding \(2023\), such that \(u-v=2w\) and \((u^2+w^2)(v^2+w^2)\) is divisible by \(289\). How many sets of possible values of \((u, v, w)\) are there?;
 ;;;;;;
 ;;;;;;
 ;;;;;;
