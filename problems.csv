@@ -39,7 +39,7 @@ IMO Prelim 2023/17;1;;;G;\(ABCD\) is a square. \(P\) is a point inside \(ABCD\) 
 IMO Prelim 2023/18;1;;;C;In a chess tournament, there were \(n\) contestants and any two of them played at most one game against each other. Each contestant has played exactly \(100\) games. For any two contestants \(A\) and \(B\) who had played against each other, there were exactly \(50\) other participants who have played against both \(A\) and \(B\). On the other hand, for any two contestants \(C\) and \(D\) who had not played against each other, there were exactly \(4\) other participants who have played against both \(C\) and \(D\). Find the value of \(n\).;
 IMO Prelim 2023/19;1;;;C;There are \(20\) students in a class, numbered \(1\) to \(20\). They have taken a test with \(n\) questions. After the test, the teacher tried to pick some students to draft the solutions, and as such it is necessary that the picked students together can solve all questions. The teacher found that this can be only done by choosing all students whose class numbers are even, or all students whose class numbers are multiples of \(5\), or any combination that includes all students from one of the two groups mentioned above. Find the smallest possible value of \(n\).;
 IMO Prelim 2023/20;1;;;N;Let \(u, v, w\) be positive integers, with \(v\) and \(w\) not exceeding \(2023\), such that \(u-v=2w\) and \((u^2+w^2)(v^2+w^2)\) is divisible by \(289\). How many sets of possible values of \((u, v, w)\) are there?;
-;;;;;;
+IMO Prelim 2022/1;1;;A;;;
 ;;;;;;
 ;;;;;;
 ;;;;;;
