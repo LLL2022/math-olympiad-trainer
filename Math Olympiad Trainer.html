@@ -7,6 +7,35 @@
     </head>
     <body>
         <h1> Math Olympiad Trainer </h1>
+        <style>
+            .item1 { grid-area: header; }
+            .item2 { grid-area: main; }
+            .item3 { grid-area: right; }
+
+            .box {
+                width: 200px;
+                height: 200px;
+                background-color: white;
+                text-align: center;
+                border-style: solid;
+            }
+
+            .grid-container {
+                display: grid;
+                grid-template-areas:
+                    'header main right'
+                    'header main right';
+                gap: 10px;
+                background-color: #2196F3;
+                padding: 10px;
+            }
+            .grid-container > div {
+                    background-color: rgba(255, 255, 255, 0.8);
+                    text-align: center;
+                    padding: 20px 0;
+                    font-size: 30px;
+            }
+        </style>
         <div>
             <button type = "button"> Random Problem.  </button>
             <button type = "button"> Problem Set.  </button>
@@ -15,10 +44,16 @@
               <button type="submit"><i class="fa fa-search"></i></button>
             </form>
         </div>
-        <div>
-            <container>
-                <p> Difficulty Range </p>
-            </container>
+        <div class = "div-container">
+            <div class = "item1">
+                Difficulty range
+            </div>
+            <div class = "item2">
+                Topic
+            </div>
+            <div class = "item3">
+                Test
+            </div>
         </div>
         <div>
             <p>
@@ -205,278 +240,6 @@
             <br>
             <p>
                 Let \(n\) be a \(4-\)digit positive integer. When \((n+2^2)(n^2+3^2)(n^3+4^2)\cdots(n^{2023} + 2024^2)\) is expressed in binary notation, at most how many ending zeros can there be?
-            </p>
-            <br>
-            <br>
-            <p>
-                
-            </p>
-            <p>
-                
-            </p>
-            <p>
-                
-            </p>
-            <p>
-                
-            </p>
-            <p>
-                
-            </p>
-            <p>
-                
-            </p>
-            <p>
-                
-            </p>
-            <p>
-                
-            </p>
-            <p>
-                
-            </p>
-            <p>
-                
-            </p>
-            <p>
-                
-            </p>
-            <p>
-                
-            </p>
-            <p>
-                
-            </p>
-            <p>
-                
-            </p>
-            <p>
-                
-            </p>
-            <p>
-                
-            </p>
-            <p>
-                
-            </p>
-            <p>
-                
-            </p>
-            <p>
-                
-            </p>
-            <p>
-                
-            </p>
-            <p>
-                
-            </p>
-            <p>
-                
-            </p>
-            <p>
-                
-            </p>
-            <p>
-                
-            </p>
-            <p>
-                
-            </p>
-            <p>
-                
-            </p>
-            <p>
-                
-            </p>
-            <p>
-                
-            </p>
-            <p>
-                
-            </p>
-            <p>
-                
-            </p>
-            <p>
-                
-            </p>
-            <p>
-                
-            </p>
-            <p>
-                
-            </p>
-            <p>
-                
-            </p>
-            <p>
-                
-            </p>
-            <p>
-                
-            </p>
-            <p>
-                
-            </p>
-            <p>
-                
-            </p>
-            <p>
-                
-            </p>
-            <p>
-                
-            </p>
-            <p>
-                
-            </p>
-            <p>
-                
-            </p>
-            <p>
-                
-            </p>
-            <p>
-                
-            </p>
-            <p>
-                
-            </p>
-            <p>
-                
-            </p>
-            <p>
-                
-            </p>
-            <p>
-                
-            </p>
-            <p>
-                
-            </p>
-            <p>
-                
-            </p>
-            <p>
-                
-            </p>
-            <p>
-                
-            </p>
-            <p>
-                
-            </p>
-            <p>
-                
-            </p>
-            <p>
-                
-            </p>
-            <p>
-                
-            </p>
-            <p>
-                
-            </p>
-            <p>
-                
-            </p>
-            <p>
-                
-            </p>
-            <p>
-                
-            </p>
-            <p>
-                
-            </p>
-            <p>
-                
-            </p>
-            <p>
-                
-            </p>
-            <p>
-                
-            </p>
-            <p>
-                
-            </p>
-            <p>
-                
-            </p>
-            <p>
-                
-            </p>
-            <p>
-                
-            </p>
-            <p>
-                
-            </p>
-            <p>
-                
-            </p>
-            <p>
-                
-            </p>
-            <p>
-                
-            </p>
-            <p>
-                
-            </p>
-            <p>
-                
-            </p>
-            <p>
-                
-            </p>
-            <p>
-                
-            </p>
-            <p>
-                
-            </p>
-            <p>
-                
-            </p>
-            <p>
-                
-            </p>
-            <p>
-                
-            </p>
-            <p>
-                
-            </p>
-            <p>
-                
-            </p>
-            <p>
-                
-            </p>
-            <p>
-                
-            </p>
-            <p>
-                
-            </p>
-            <p>
-                
-            </p>
-            <p>
-                
-            </p>
-            <p>
-                
-            </p>
-            <p>
-                
-            </p>
-            <p>
-                
             </p>
         </div>
     </body>
