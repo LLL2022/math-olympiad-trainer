@@ -1,0 +1,57 @@
+.irs {
+    font-family: sans-serif;
+  }
+  
+  .irs--flat .irs-line {
+    background: var(--input-slider-color);
+    border-radius: 0 !important;
+  }
+  
+  .irs--flat .irs-bar--single {
+    border-radius: 0;
+  }
+  
+  .irs--flat
+    :is(.irs-bar, .irs-handle > i:first-child, .irs-from, .irs-single, .irs-to) {
+    background: var(--input-accent-color);
+  }
+  
+  .irs--flat :is(.irs-min, .irs-max) {
+    color: var(--placeholder-color);
+    background: var(--input-slider-color);
+  }
+  
+  .irs--flat :is(.irs-min, .irs-from, .irs-single, .irs-to, .irs-max) {
+    padding-top: 2px;
+    font-size: 12px;
+  }
+  
+  .js-irs-2 .irs-grid {
+    /* basically a bad nth-child selector */
+    left: 0.66% !important;
+  }
+  
+  .irs--flat .irs-grid-pol {
+    background-color: var(--range-grid-color);
+  }
+  
+  .irs-grid-text {
+    font-size: 11px;
+  }
+  
+  .irs--flat :is(.irs-handle.state_hover, .irs-handle:hover) > i:first-child {
+    background: var(--input-handle-color);
+  }
+  
+  .irs--flat :is(.irs-from, .irs-single, .irs-to)::before {
+    border-top-color: var(--input-accent-color);
+  }
+  
+  .range-label {
+    display: block;
+    width: 100%;
+    margin: 0;
+    color: var(--placeholder-color);
+    text-align: center;
+  } /**/
+  

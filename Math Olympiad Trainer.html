@@ -6,6 +6,8 @@
         <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
     </head>
     <body>
+        <link href="/src/fonts.css" rel="stylesheet" />
+        <link id="stylesheet-link" href="/src/Math Olympiad Trainer.css" rel="stylesheet" />
         <h1> Math Olympiad Trainer </h1>
         <style>
             .item1 { grid-area: header; }
@@ -44,10 +46,34 @@
               <button type="submit"><i class="fa fa-search"></i></button>
             </form>
         </div>
-        <div class = "div-container">
+        <div class = "grid-container">
             <div class = "item1">
-                Difficulty range
+                <label class = "range-label">Difficulty</label>
+                <span class = "irs">
+                    <span class = "irs-line" tabindex="0"></span>
+                    <span class = "irs-from" style = "visibility: visible;">1</span>
+                    <span class = "irs-to" style = "visibility: visible;">7</span>
+                    <span class = "irs-single" style = "visibility: visible;"></span>
+                </span>
+                <span class = "irs-grid">
+                    <span class = "irs-grid-pol" style="left: 0%"></span>
+                    <span class = "irs-grid-text js-grid-text-0" style="left: 0.0000%;">1</span>
+                    <span class = "irs-grid-pol small" style="left: 8.3333%"></span>
+                    <span class = "irs-grid-pol small" style="left: 16.6667%"></span>
+                    <span class = "irs-grid-pol small" style="left: 25.0000%"></span>
+                    <span class = "irs-grid-text js-grid-text-0" style="left: 33.3333%;">3</span>
+                    <span class = "irs-grid-pol small" style="left: 41.6667%"></span>
+                    <span class = "irs-grid-pol small" style="left: 50.0000%"></span>
+                    <span class = "irs-grid-pol small" style="left: 58.3333%"></span>
+                    <span class = "irs-grid-text js-grid-text-0" style="left: 66.6667%;">5</span>
+                    <span class = "irs-grid-pol small" style="left: 75.0000%"></span>
+                    <span class = "irs-grid-pol small" style="left: 83.3333%"></span>
+                    <span class = "irs-grid-pol small" style="left: 91.6667%"></span>
+                    <span class = "irs-grid-text js-grid-text-0" style="left: 100%;">7</span>
+                </span>
             </div>
+
+
             <div class = "item2">
                 Topic
             </div>
