@@ -17,7 +17,7 @@
 
     <!-- Customization - Choosing Topic-->
 
-    <form id="form">
+    <form id="form1">
         <select multiple>
             <option value='Algebra' selected>Algebra</option>
             <option value='Combinatorics' selected>Combinatorics</option>
@@ -27,6 +27,17 @@
     </form>
 
     <!-- Customization - Choosing Source-->
+
+    <form id="form2">
+        <select multiple>
+            <option value='IMO' selected>IMO</option>
+            <option value='APMO' selected>APMO</option>
+            <option value='CHKMO' selected>CHKMO</option>
+            <option value='Test 2' selected>Test 2</option>
+            <option value='Test 1' selected>Test 1</option>
+            <option value='IMO Prelim' selected>IMO Prelim</option>
+        </select>
+    </form>
 
     <!-- Random Problem generator-->
     <button id="generate-text">Random Problem</button>
@@ -57,8 +68,8 @@
                     var info;
 
                     // Getting info about which subjects
-
-                    var subjectSelect = document.querySelector('form#form select[multiple]');
+                    var subjectSelect = document.querySelector('form#form1 select[multiple]');
+                    console.log(subjectSelect);
                     var subjectStr = ['A', 'C', 'G', 'N'];
 
                     // Function to get the selected/not selected status of each option
@@ -71,6 +82,14 @@
 
                         return selectedStatus;
                     }
+
+                    // Getting info about which sources
+                    var sourceSelect = document.querySelector('form#form2 select[multiple]');
+                    console.log(sourceSelect);
+                    var sourceStr = ['IMO', 'APMO', 'CHKMO', 'T2', 'T1', 'Prelim'];
+
+
+
 
                     // Add the button click event handler here
                     $('#generate-text').click(function() {
@@ -97,7 +116,35 @@
                             }
                         }
 
-                        var randomrow = problemListArray[Math.floor(Math.random() * problemListArray.length)];
+                        console.log(problemListArray);
+
+                        // Array of possible sources
+                        var selectedStatusSource = getSelectedStatus(sourceSelect);
+                        var possibleSources = [];
+
+                        for (var i = 0; i < 4; i++) {
+                            if (selectedStatusSource[i]) {
+                                possibleSources.push(sourceStr[i]);
+                            }
+                        }
+
+                        // Create list of possible problems based on source
+                        var problemListArrayNew = [];
+                        for (var i = 1; i < problemListArray.length; i++) {
+                            var infoConsideredNew = problemListArray[i];
+                            var infoConsideredProcessedNew = infoConsideredNew.join(', ').split(" ");
+                            var sourceConsidered = infoConsideredProcessedNew[0];
+
+                            if (possibleSources.includes(sourceConsidered)) {
+                                problemListArrayNew.push(infoConsideredNew);
+                            }
+                        }
+
+                        console.log(problemListArrayNew);
+
+                        // Random problem
+
+                        var randomrow = problemListArrayNew[Math.floor(Math.random() * problemListArrayNew.length)];
                         var randomText = randomrow.join(', ');
 
                         // JS splits based on commas, not semicolons
