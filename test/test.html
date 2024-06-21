@@ -9,12 +9,18 @@
     <script src="https://d3js.org/d3.v6.min.js"></script>
 </head>
 <body>
-    <h1>Random Text Generator</h1>
-    <button id="generate-text">Generate Random Text</button>
+    <h1>Math Olympiad Trainer</h1>
+
+
+    <!-- Random Problem generator-->
+    <button id="generate-text">Random Problem</button>
     <p id="random-text"></p>
 
+    <button id="generate-sol">Show Solution</button>
+    <p id="sol-text"></p>
+
+    <!-- Below is JS code for Random Problem function -->
     <script>
-        
         $(document).ready(function() {
             var twoDArray;
 
@@ -32,6 +38,8 @@
                     // Now, twoDArray should contain all the entries from the CSV file
                     console.log(twoDArray);
 
+                    var info;
+
                     // Add the button click event handler here
                     $('#generate-text').click(function() {
                         var randomrow = twoDArray[Math.floor(Math.random() * twoDArray.length)];
@@ -40,9 +48,10 @@
                         // JS splits based on commas, not semicolons
                         // We concatenate everything them split based on semicolons manually
 
-                        let info = randomText.split(";;");
+                        info = randomText.split(";;");
                         let question = info.at(-2);
 
+                        // For debugging purposes
                         console.log(randomrow);
                         console.log(randomText);
                         console.log(info);
@@ -51,6 +60,15 @@
 
                         $('#random-text').html(question);
                         MathJax.typeset();
+                        $('#sol-text').html("");
+                    });
+
+                    // To show solution
+                    $('#generate-sol').click(function() {
+                        let solution = info.at(-1);
+
+                        $('#sol-text').html(solution);
+                        MathJax.typeset();
                     });
                 })
                 .catch(function(error) {
@@ -58,5 +76,6 @@
                 });
         });
     </script>
+    
 </body>
 </html>
