@@ -73,6 +73,8 @@
                     console.log(twoDArray);
 
                     var info;
+                    var flag = "problem";
+                    var solution = "";
 
                     // Getting info about which subjects
                     var subjectSelect = document.querySelector('form#form1 select[multiple]');
@@ -95,11 +97,10 @@
                     console.log(sourceSelect);
                     var sourceStr = ['IMO', 'APMO', 'CHKMO', 'T2', 'T1', 'Prelim'];
 
-
-
-
                     // Single random problem
                     $('#generate-text').click(function() {
+                        solution = "";
+                        flag = "problem";
 
                         // Call the getSelectedStatus function to get the array of possible subjects
                         var selectedStatus = getSelectedStatus(subjectSelect);
@@ -129,7 +130,7 @@
                         var selectedStatusSource = getSelectedStatus(sourceSelect);
                         var possibleSources = [];
 
-                        for (var i = 0; i < 4; i++) {
+                        for (var i = 0; i < 6; i++) {
                             if (selectedStatusSource[i]) {
                                 possibleSources.push(sourceStr[i]);
                             }
@@ -159,6 +160,7 @@
 
                         info = randomText.split(";;");
                         let question = info.at(-2);
+                        solution = info.at(-1);
 
                         $('#random-text').html(question);
                         MathJax.typeset();
@@ -167,14 +169,15 @@
 
                     // To show solution
                     $('#generate-sol').click(function() {
-                        let solution = info.at(-1);
-
+                        console.log(solution);
                         $('#sol-text').html(solution);
                         MathJax.typeset();
                     });
 
                     // Problem Set
                     $('#generate-pset').click(function() {
+                        flag = "pset";
+                        solution = "";
 
                         // Call the getSelectedStatus function to get the array of possible subjects
                         var selectedStatus = getSelectedStatus(subjectSelect);
@@ -204,7 +207,7 @@
                         var selectedStatusSource = getSelectedStatus(sourceSelect);
                         var possibleSources = [];
 
-                        for (var i = 0; i < 4; i++) {
+                        for (var i = 0; i < 6; i++) {
                             if (selectedStatusSource[i]) {
                                 possibleSources.push(sourceStr[i]);
                             }
@@ -239,11 +242,11 @@
 
                             info = randomText.split(";;");
                             let question = info.at(-2);
+                            let singlesolution = info.at(-1);
 
                             pset += question + "<br><br>";
+                            solution += singlesolution + "<br><br>";
                         }
-
-                        
 
                         $('#random-text').html(pset);
                         MathJax.typeset();
