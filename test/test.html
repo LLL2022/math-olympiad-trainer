@@ -46,6 +46,13 @@
     <button id="generate-sol">Show Solution</button>
     <p id="sol-text"></p>
 
+    <!-- Problem Set generator -->
+
+    <button id="generate-pset">Random Problem Set</button>
+
+    <div id="buttonContainer"></div>
+
+
     <!-- Below is JS code for Random Problem function -->
     <script>
         $(document).ready(function() {
@@ -91,7 +98,7 @@
 
 
 
-                    // Add the button click event handler here
+                    // Single random problem
                     $('#generate-text').click(function() {
 
                         // Call the getSelectedStatus function to get the array of possible subjects
@@ -164,6 +171,83 @@
 
                         $('#sol-text').html(solution);
                         MathJax.typeset();
+                    });
+
+                    // Problem Set
+                    $('#generate-pset').click(function() {
+
+                        // Call the getSelectedStatus function to get the array of possible subjects
+                        var selectedStatus = getSelectedStatus(subjectSelect);
+                        var possibleSubjects = [];
+
+                        for (var i = 0; i < 4; i++) {
+                            if (selectedStatus[i]) {
+                                possibleSubjects.push(subjectStr[i]);
+                            }
+                        }
+
+                        // Create list of possible problems based on topic
+                        var problemListArray = [];
+                        for (var i = 1; i < twoDArray.length; i++) {
+                            var infoConsidered = twoDArray[i];
+                            var infoConsideredProcessed = infoConsidered.join(', ').split(";;");
+                            var subjectConsidered = infoConsideredProcessed[4];
+
+                            if (possibleSubjects.includes(subjectConsidered)) {
+                                problemListArray.push(infoConsidered);
+                            }
+                        }
+
+                        console.log(problemListArray);
+
+                        // Array of possible sources
+                        var selectedStatusSource = getSelectedStatus(sourceSelect);
+                        var possibleSources = [];
+
+                        for (var i = 0; i < 4; i++) {
+                            if (selectedStatusSource[i]) {
+                                possibleSources.push(sourceStr[i]);
+                            }
+                        }
+
+                        // Create list of possible problems based on source
+                        var problemListArrayNew = [];
+                        for (var i = 1; i < problemListArray.length; i++) {
+                            var infoConsideredNew = problemListArray[i];
+                            var infoConsideredProcessedNew = infoConsideredNew.join(', ').split(" ");
+                            var sourceConsidered = infoConsideredProcessedNew[0];
+
+                            if (possibleSources.includes(sourceConsidered)) {
+                                problemListArrayNew.push(infoConsideredNew);
+                            }
+                        }
+
+                        console.log(problemListArrayNew);
+
+                        var N = 10;
+
+                        var pset = "";
+
+                        for (var i = 0; i < N; i++) {
+                            // Random problem
+
+                            var randomrow = problemListArrayNew[Math.floor(Math.random() * problemListArrayNew.length)];
+                            var randomText = randomrow.join(', ');
+
+                            // JS splits based on commas, not semicolons
+                            // We concatenate everything them split based on semicolons manually
+
+                            info = randomText.split(";;");
+                            let question = info.at(-2);
+
+                            pset += question + "<br><br>";
+                        }
+
+                        
+
+                        $('#random-text').html(pset);
+                        MathJax.typeset();
+                        $('#sol-text').html("");
                     });
                 })
                 .catch(function(error) {
