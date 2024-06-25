@@ -48,6 +48,8 @@
 
     <!-- Problem Set generator -->
 
+    Number of Problems: <input type="number" id="numberofproblems"></input>
+
     <button id="generate-pset">Random Problem Set</button>
 
     <!-- Past Test/Problem -->
@@ -78,7 +80,7 @@
         </select>
     </form>
 
-    Problem Number: <input type="text" id="problemnum"></input>
+    Problem Number: <input type="number" id="problemnum"></input>
 
     <button id="generate-test">Find Test/Problem</button>
 
@@ -257,7 +259,13 @@
 
                         console.log(problemListArrayNew);
 
-                        var N = 10;
+                        var Number = document.querySelector("#numberofproblems");
+                        var N = Number.value;
+                        console.log(N);
+                        if (N == 0){
+                            N = 1;
+                        }
+                        console.log(N);
 
                         var pset = "";
 
@@ -297,12 +305,10 @@
                         var year = selectedOptionYear.value;
 
                         var problemnumberlist = document.querySelector('#problemnum');
-                        console.log(problemnumberlist);
                         var problemnumber = 0;
                         if (problemnumberlist != null){
                             problemnumber = problemnumberlist.value;
                         }
-                        console.log(problemnumber);
 
                         // Create list of problems
                         var problemListArrayNew = [];
