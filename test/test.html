@@ -78,7 +78,7 @@
         </select>
     </form>
 
-    Problem Number: <input type="text"></input>
+    Problem Number: <input type="text" id="problemnum"></input>
 
     <button id="generate-test">Find Test/Problem</button>
 
@@ -296,24 +296,45 @@
                         var selectedOptionYear = selectElementTestYear.selectedOptions[0];
                         var year = selectedOptionYear.value;
 
+                        var problemnumberlist = document.querySelector('#problemnum');
+                        console.log(problemnumberlist);
+                        var problemnumber = 0;
+                        if (problemnumberlist != null){
+                            problemnumber = problemnumberlist.value;
+                        }
+                        console.log(problemnumber);
+
                         // Create list of problems
                         var problemListArrayNew = [];
                         for (var i = 1; i < twoDArray.length; i++) {
                             var infoConsideredNew = twoDArray[i];
                             var infoConsideredProcessedNew = infoConsideredNew.join(', ').split(" ");
                             var sourceConsidered = infoConsideredProcessedNew[0];
-                            console.log(infoConsideredProcessedNew);
+
                             if (infoConsideredProcessedNew.length > 4) {
                                 var yearConsidered = infoConsideredProcessedNew[1].slice(0, 4);
-                                console.log(yearConsidered, sourceConsidered, year, source);
-                                if ((yearConsidered == year) && (sourceConsidered == source)) {
-                                    problemListArrayNew.push(infoConsideredNew);
-                                    console.log(problemListArrayNew)
+                                var problemnumberConsidered = infoConsideredProcessedNew[1].slice(5, 7);
+
+                                if (problemnumberConsidered[1] == ";") {
+                                    var problemnumberConsidered = problemnumberConsidered[0];
+                                }
+
+            
+                                if (problemnumber == 0) {
+                                    if ((yearConsidered == year) && (sourceConsidered == source)) {
+                                        problemListArrayNew.push(infoConsideredNew);
+                                        console.log(problemListArrayNew);
+                                    }
+                                }
+
+                                else {
+                                    if ((yearConsidered == year) && (sourceConsidered == source) && (problemnumberConsidered == problemnumber)) {
+                                        problemListArrayNew.push(infoConsideredNew);
+                                        console.log(problemListArrayNew);
+                                    }
                                 }
                             }
                         }
-
-                        console.log(problemListArrayNew);
 
                         var pset = "";
 
