@@ -101,16 +101,12 @@
                         return row.split(',');
                     });
 
-                    // Now, twoDArray should contain all the entries from the CSV file
-                    console.log(twoDArray);
-
                     var info;
                     var flag = "problem";
                     var solution = "";
 
                     // Getting info about which subjects
                     var subjectSelect = document.querySelector('form#form1 select[multiple]');
-                    console.log(subjectSelect);
                     var subjectStr = ['A', 'C', 'G', 'N'];
 
                     // Function to get the selected/not selected status of each option
@@ -126,7 +122,6 @@
 
                     // Getting info about which sources
                     var sourceSelect = document.querySelector('form#form2 select[multiple]');
-                    console.log(sourceSelect);
                     var sourceStr = ['IMO', 'APMO', 'CHKMO', 'T2', 'T1', 'Prelim'];
 
                     // Single random problem
@@ -156,8 +151,6 @@
                             }
                         }
 
-                        console.log(problemListArray);
-
                         // Array of possible sources
                         var selectedStatusSource = getSelectedStatus(sourceSelect);
                         var possibleSources = [];
@@ -180,8 +173,6 @@
                             }
                         }
 
-                        console.log(problemListArrayNew);
-
                         // Random problem
 
                         var randomrow = problemListArrayNew[Math.floor(Math.random() * problemListArrayNew.length)];
@@ -201,7 +192,6 @@
 
                     // To show solution
                     $('#generate-sol').click(function() {
-                        console.log(solution);
                         $('#sol-text').html(solution);
                         MathJax.typeset();
                     });
@@ -233,8 +223,6 @@
                             }
                         }
 
-                        console.log(problemListArray);
-
                         // Array of possible sources
                         var selectedStatusSource = getSelectedStatus(sourceSelect);
                         var possibleSources = [];
@@ -257,15 +245,11 @@
                             }
                         }
 
-                        console.log(problemListArrayNew);
-
                         var Number = document.querySelector("#numberofproblems");
                         var N = Number.value;
-                        console.log(N);
                         if (N == 0){
                             N = 1;
                         }
-                        console.log(N);
 
                         var pset = "";
 
@@ -329,14 +313,12 @@
                                 if (problemnumber == 0) {
                                     if ((yearConsidered == year) && (sourceConsidered == source)) {
                                         problemListArrayNew.push(infoConsideredNew);
-                                        console.log(problemListArrayNew);
                                     }
                                 }
 
                                 else {
                                     if ((yearConsidered == year) && (sourceConsidered == source) && (problemnumberConsidered == problemnumber)) {
                                         problemListArrayNew.push(infoConsideredNew);
-                                        console.log(problemListArrayNew);
                                     }
                                 }
                             }
