@@ -191,8 +191,8 @@
                         // We concatenate everything them split based on semicolons manually
 
                         info = randomText.split(";;");
-                        let question = info.at(-2);
-                        solution = info.at(-1);
+                        let question = "<b>Problem. </b>" + info.at(-2);
+                        solution = "<b>Solution. </b>" + info.at(-1);
 
                         $('#random-text').html(question);
                         MathJax.typeset();
@@ -279,8 +279,8 @@
                             // We concatenate everything them split based on semicolons manually
 
                             info = randomText.split(";;");
-                            let question = info.at(-2);
-                            let singlesolution = info.at(-1);
+                            let question = `<b>Problem ${i+1}. </b>` + info.at(-2);
+                            let singlesolution = `<b>Solution ${i+1}. </b>` + info.at(-1);
 
                             pset += question + "<br><br>";
                             solution += singlesolution + "<br><br>";
@@ -354,11 +354,20 @@
                             // We concatenate everything them split based on semicolons manually
 
                             info = randomText.split(";;");
-                            let question = info.at(-2);
-                            let singlesolution = info.at(-1);
+                            if (problemnumber == 0){
+                                let question = `<b>Problem ${i+1}. </b>` + info.at(-2);
+                                let singlesolution = `<b>Solution ${i+1}. </b>` + info.at(-1);
 
-                            pset += question + "<br><br>";
-                            solution += singlesolution + "<br><br>";
+                                pset += question + "<br><br>";
+                                solution += singlesolution + "<br><br>";
+                            }
+                            else{
+                                let question = `<b>Problem ${problemnumber}. </b>` + info.at(-2);
+                                let singlesolution = `<b>Solution ${problemnumber}. </b>` + info.at(-1);
+
+                                pset += question + "<br><br>";
+                                solution += singlesolution + "<br><br>";
+                            }
                         }
 
                         $('#random-text').html(pset);
