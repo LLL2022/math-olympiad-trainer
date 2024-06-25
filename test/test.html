@@ -50,7 +50,37 @@
 
     <button id="generate-pset">Random Problem Set</button>
 
-    <div id="buttonContainer"></div>
+    <!-- Past Test/Problem -->
+
+    <form>
+        <select id="source">
+            <option value='IMO' selected>IMO</option>
+            <option value='APMO'>APMO</option>
+            <option value='CHKMO'>CHKMO</option>
+            <option value='T2'>Test 2</option>
+            <option value='T1'>Test 1</option>
+            <option value='Prelim'>IMO Prelim</option>
+        </select>
+    </form>
+
+    <form>
+        <select id="year">
+            <option value='2023' selected>2023</option>
+            <option value='2022'>2022</option>
+            <option value='2021'>2021</option>
+            <option value='2020'>2020</option>
+            <option value='2019'>2019</option>
+            <option value='2018'>2018</option>
+            <option value='2017'>2017</option>
+            <option value='2016'>2016</option>
+            <option value='2015'>2015</option>
+            <option value='2014'>2014</option>
+        </select>
+    </form>
+
+    Problem Number: <input type="text"></input>
+
+    <button id="generate-test">Find Test/Problem</button>
 
 
     <!-- Below is JS code for Random Problem function -->
@@ -235,6 +265,62 @@
                             // Random problem
 
                             var randomrow = problemListArrayNew[Math.floor(Math.random() * problemListArrayNew.length)];
+                            var randomText = randomrow.join(', ');
+
+                            // JS splits based on commas, not semicolons
+                            // We concatenate everything them split based on semicolons manually
+
+                            info = randomText.split(";;");
+                            let question = info.at(-2);
+                            let singlesolution = info.at(-1);
+
+                            pset += question + "<br><br>";
+                            solution += singlesolution + "<br><br>";
+                        }
+
+                        $('#random-text').html(pset);
+                        MathJax.typeset();
+                        $('#sol-text').html("");
+                    });
+
+                    // Find Test
+                    $('#generate-test').click(function() {
+                        flag = "test";
+                        solution = "";
+
+                        var selectElementTestSource = document.getElementById('source');
+                        var selectedOptionSource = selectElementTestSource.selectedOptions[0];
+                        var source = selectedOptionSource.value;
+
+                        var selectElementTestYear = document.getElementById('year');
+                        var selectedOptionYear = selectElementTestYear.selectedOptions[0];
+                        var year = selectedOptionYear.value;
+
+                        // Create list of problems
+                        var problemListArrayNew = [];
+                        for (var i = 1; i < twoDArray.length; i++) {
+                            var infoConsideredNew = twoDArray[i];
+                            var infoConsideredProcessedNew = infoConsideredNew.join(', ').split(" ");
+                            var sourceConsidered = infoConsideredProcessedNew[0];
+                            console.log(infoConsideredProcessedNew);
+                            if (infoConsideredProcessedNew.length > 4) {
+                                var yearConsidered = infoConsideredProcessedNew[1].slice(0, 4);
+                                console.log(yearConsidered, sourceConsidered, year, source);
+                                if ((yearConsidered == year) && (sourceConsidered == source)) {
+                                    problemListArrayNew.push(infoConsideredNew);
+                                    console.log(problemListArrayNew)
+                                }
+                            }
+                        }
+
+                        console.log(problemListArrayNew);
+
+                        var pset = "";
+
+                        for (var i = 0; i < problemListArrayNew.length; i++) {
+                            // Random problem
+
+                            var randomrow = problemListArrayNew[i];
                             var randomText = randomrow.join(', ');
 
                             // JS splits based on commas, not semicolons
