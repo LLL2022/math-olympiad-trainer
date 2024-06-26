@@ -249,7 +249,6 @@
 
                             if (possibleSubjects.includes(subjectConsidered)) {
                                 problemListArray.push(infoConsidered);
-                                console.log(infoConsidered);
                             }
                         }
 
@@ -287,7 +286,6 @@
                         let question = "<b>Problem. </b>" + info.at(-2);
                         solution = "<b>Solution. </b>" + info.at(-1);
                         answer = info.at(2).slice(2, -2);
-                        console.log(answer);
 
                         $('#random-text').html(question);
                         MathJax.typeset();
