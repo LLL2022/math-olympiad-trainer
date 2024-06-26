@@ -56,10 +56,6 @@ button:hover{
     
 }
 
-.generate-text{
-    
-}
-
 input{
     font-family:"IBM Plex Sans", sans-serif;
     font-weight: 300;
@@ -67,16 +63,43 @@ input{
     color: black;
 }
 
+.custom-select-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%
+}
+
 .custom-select select{
     font-family: "IBM Plex Sans";
-    height: 200px;
+    height: 260px;
     width: 200px;
     align-items: center;
     color: #704e2e
-
 }
 
 .custom-select option{
     padding: 8px 16px;
     font-size: 20px;
+}
+
+.custom-select div:hover{
+    background-color: rgba(0,0,0,0.1);
+}
+
+.custom-select {
+    flex: 0 0 auto;
+    width: 20%;
+}
+
+.custom-select:nth-child(1) {
+    margin-left: 15%
+}
+
+.custom-select:nth-child(2) {
+    margin: 0 5%;
+}
+
+.custom-select:nth-child(3) {
+    margin-right: 15%;
 }

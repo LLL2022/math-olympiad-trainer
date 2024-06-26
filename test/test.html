@@ -14,28 +14,25 @@
 <div class="mainbody">
     <h1>Math Olympiad Trainer</h1>
 
-    <hr>
+    <div align="center" class="custom-select-container">
+        <!-- Customization - Choosing Difficulty-->
+        <div class="custom-select" style="display: inline-block">
+        <form id="diff">
+            <select multiple>
+                <option value='1' selected>[1, 2)</option>
+                <option value='2' selected>[2, 3)</option>
+                <option value='3' selected>[3, 4)</option>
+                <option value='4' selected>[4, 5)</option>
+                <option value='5' selected>[5, 6)</option>
+                <option value='6' selected>[6, 7)</option>
+            </select>
+        </form>
+        </div>
 
-    <!-- SECTION 1: SINGLE PROBLEM-->
-
-    <!-- Customization - Choosing Difficulty-->
-
-    <form id="diff">
-        <select multiple>
-            <option value='1' selected>[1, 2)</option>
-            <option value='2' selected>[2, 3)</option>
-            <option value='3' selected>[3, 4)</option>
-            <option value='4' selected>[4, 5)</option>
-            <option value='5' selected>[5, 6)</option>
-            <option value='6' selected>[6, 7)</option>
-        </select>
-    </form>
-
-    <!-- Customization - Choosing Topic-->
-    <div align="center">
+         <!-- Customization - Choosing Topic-->
         <div class="custom-select" style="display: inline-block">
         <form id="form1">
-        <select data-placeholder="Type a topic..." multiple class="chosen-select" name="form1">
+        <select multiple class="chosen-select" name="form1">
             <option value='Algebra' selected>Algebra</option>
             <option value='Combinatorics' selected>Combinatorics</option>
             <option value='Geometry' selected>Geometry</option>
@@ -44,7 +41,7 @@
         </form>
         </div> 
 
-    <!-- Customization - Choosing Source-->
+        <!-- Customization - Choosing Source-->
         <div class="custom-select" style="display: inline-block">
         <form id="form2">
         <select multiple>
@@ -61,11 +58,27 @@
 
     <br>
     <!-- Random Problem generator-->
-    <button id="generate-text" class="generate-text">Random Problem</button>
+    <button id="generate-text" class="randomproblem">Random Problem</button>
+    <br>
+    <br>
+    <p id="random-text" class="random-text"></p>
+
+    <!-- Answer box (NEED TO INCLUDE CODE FOR CHECKING ANS/DISAPPEARING FOR PROOF QUESTIONS)-->
+    <form action="test.php" method="GET">
+        <!-- test.php is not a real thing, need to edit-->
+    
+        <input type="text" id="answerbox" placeholder="Enter answer:"></input>
+        <input type="submit"></input>
+
+    </form>
+
+    <br>
+    <button id="generate-sol">Show Solution</button>
+    <p id="sol-text"></p>
 
     <!-- Problem Set generator -->
 
-    Number of Problems: <input type="number" id="numberofproblems"></input>
+    <input type="number" placeholder="Number of Problems:"  id="numberofproblems"></input>
 
     <button id="generate-pset">Random Problem Set</button>
 
@@ -97,7 +110,7 @@
         </select>
     </form>
 
-    Problem Number: <input type="number" id="problemnum"></input>
+    <input type="number" id="problemnum" placeholder="Problem Number:" ></input>
 
     <button id="generate-test">Find Test/Problem</button>
 
