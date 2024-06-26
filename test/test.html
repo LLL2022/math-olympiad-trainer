@@ -12,7 +12,52 @@
 </head>
 <body>
 <div class="mainbody">
-    <h1>Math Olympiad Trainer</h1>
+    <h1><b>Math Olympiad Trainer</b></h1>
+    <br>
+    <hr>
+    <br>
+    <div align="center">
+        <button class="dropdown">Random Problem</button>
+        <button class="dropdown">Random Problem Set</button>
+        <button class="dropdown">Find Test/Problem</button>
+    </div>
+    <br>
+    <hr>
+    <br>
+<!-- Past Test/Problem -->
+    <div align="center">    
+        <form>
+        <select id="source" class="source">
+            <option value='IMO' selected>IMO</option>
+            <option value='APMO'>APMO</option>
+            <option value='CHKMO'>CHKMO</option>
+            <option value='T2'>Test 2</option>
+            <option value='T1'>Test 1</option>
+            <option value='Prelim'>IMO Prelim</option>
+        </select>
+        </form>
+        <form>
+        <select id="year" class="year">
+            <option value='2023' selected>2023</option>
+            <option value='2022'>2022</option>
+            <option value='2021'>2021</option>
+            <option value='2020'>2020</option>
+            <option value='2019'>2019</option>
+            <option value='2018'>2018</option>
+            <option value='2017'>2017</option>
+            <option value='2016'>2016</option>
+            <option value='2015'>2015</option>
+            <option value='2014'>2014</option>
+        </select>
+        </form>
+        <input type="number" id="problemnum" placeholder="Problem Number:" ></input>
+    </div>
+    <br>
+    <br>
+    <div align="center">
+        <button id="generate-test">Find Test/Problem</button>
+    </div>
+
 
     <div align="center" class="custom-select-container">
         <!-- Customization - Choosing Difficulty-->
@@ -55,57 +100,34 @@
         </form>
         </div> 
     </div>
-
+    <br>
     <br>
     <!-- Random Problem generator-->
-    <button id="generate-text" class="randomproblem">Random Problem</button>
+    <div align="center"><button id="generate-text" class="randomproblem">Random Problem</button></div>
+    
+    <!-- Problem Set generator -->
+
+    <div>
+        <div align="center"><input type="number" placeholder="Number of Problems:"  id="numberofproblems" class="numberofproblems"></input></div>
+        <br>
+        <br>
+        <div align="center"><button id="generate-pset">Random Problem Set</button></div>
+    </div>
+    
+    
+    
+    <br>
     <br>
     <br>
     <p id="random-text" class="random-text"></p>
 
     <br>
-
-    <button id="generate-sol">Show Solution</button>
-    <p id="sol-text"></p>
-
-    <!-- Problem Set generator -->
-
-    <input type="number" placeholder="Number of Problems:"  id="numberofproblems"></input>
-
-    <button id="generate-pset">Random Problem Set</button>
-
-    <!-- Past Test/Problem -->
-
-    <form>
-        <select id="source">
-            <option value='IMO' selected>IMO</option>
-            <option value='APMO'>APMO</option>
-            <option value='CHKMO'>CHKMO</option>
-            <option value='T2'>Test 2</option>
-            <option value='T1'>Test 1</option>
-            <option value='Prelim'>IMO Prelim</option>
-        </select>
-    </form>
-
-    <form>
-        <select id="year">
-            <option value='2023' selected>2023</option>
-            <option value='2022'>2022</option>
-            <option value='2021'>2021</option>
-            <option value='2020'>2020</option>
-            <option value='2019'>2019</option>
-            <option value='2018'>2018</option>
-            <option value='2017'>2017</option>
-            <option value='2016'>2016</option>
-            <option value='2015'>2015</option>
-            <option value='2014'>2014</option>
-        </select>
-    </form>
-
-    <input type="number" id="problemnum" placeholder="Problem Number:" ></input>
-
-    <button id="generate-test">Find Test/Problem</button>
-
+    <br>
+    <div align="center"><button id="generate-sol">Show Solution</button></div>
+    <br>
+    <br>
+    <br>
+    <p id="sol-text" class="sol-text"></p>
 
     <!-- Below is JS code for Random Problem function -->
     <script>

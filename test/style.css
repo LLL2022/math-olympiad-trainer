@@ -26,6 +26,11 @@ body{
     background-color: white;
 }
 
+form {
+    display: inline-block;
+    vertical-align: top;
+}
+
 button{
     font-family:"IBM Plex Sans", sans-serif;
     font-size: x-large;
@@ -53,7 +58,23 @@ button:hover{
     font-size: x-large;
     width: 80%;
     margin:0 auto;
-    
+}
+
+.sol-text{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: rgb(0, 0, 0, 0.5);
+    padding: 40px;
+    font-size: x-large;
+    width: 80%;
+    margin:0 auto;
+}
+
+.dropdown{
+    background-color: #508aa8;
+}
+
+.dropdown:hover{
+    background-color: rgba(80, 138, 168, 0.9);
 }
 
 input{
@@ -61,6 +82,30 @@ input{
     font-weight: 300;
     font-style: normal;
     color: black;
+    font-size: large;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: none;
+    padding: 10px;
+    width: 20%;
+}
+.source{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: none;
+    font-family: "IBM Plex Sans", sans-serif;
+    width: 300px;
+    height: auto;
+    font-size: large;
+    padding: 3%;
+}
+
+.year{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: none;
+    font-family: "IBM Plex Sans", sans-serif;
+    width: 300px;
+    height: auto;
+    font-size: large;
+    padding: 3%
 }
 
 .custom-select-container {
