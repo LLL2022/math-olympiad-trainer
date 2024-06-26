@@ -14,6 +14,8 @@
 <div class="mainbody">
     <h1>Math Olympiad Trainer</h1>
 
+    <hr>
+
     <!-- SECTION 1: SINGLE PROBLEM-->
 
     <!-- Customization - Choosing Difficulty-->
@@ -59,21 +61,7 @@
 
     <br>
     <!-- Random Problem generator-->
-    <button id="generate-text" class="randomproblem">Random Problem</button>
-    <p id="random-text" class="random-text"></p>
-
-    <!-- Answer box (NEED TO INCLUDE CODE FOR CHECKING ANS/DISAPPEARING FOR PROOF QUESTIONS)-->
-    <form action="test.php" method="GET">
-        <!-- test.php is not a real thing, need to edit-->
-    
-        <input type="text" id="answerbox" placeholder="Enter answer:">
-        <input type="submit">
-
-    </form>
-
-    <br>
-    <button id="generate-sol">Show Solution</button>
-    <p id="sol-text"></p>
+    <button id="generate-text" class="generate-text">Random Problem</button>
 
     <!-- Problem Set generator -->
 
@@ -112,6 +100,26 @@
     Problem Number: <input type="number" id="problemnum"></input>
 
     <button id="generate-test">Find Test/Problem</button>
+
+    <br>
+    <br>
+    <br>
+    <p id="random-text" class="random-text"></p>
+
+
+    
+    <!-- Answer box (NEED TO INCLUDE CODE FOR CHECKING ANS/DISAPPEARING FOR PROOF QUESTIONS)-->
+    <form action="test.php" method="GET">
+        <!-- test.php is not a real thing, need to edit-->
+    
+        <input type="text" id="answerbox" placeholder="Enter answer:">
+        <input type="submit">
+
+    </form>
+
+    <br>
+    <button id="generate-sol">Show Solution</button>
+    <p id="sol-text"></p>
 
 
     <!-- Below is JS code for Random Problem function -->
