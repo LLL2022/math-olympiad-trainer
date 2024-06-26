@@ -4,7 +4,9 @@
     <title>Math Olympiad Trainer</title>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://d3js.org/d3.v6.min.js"></script>
 </head>
@@ -16,19 +18,21 @@
     <!-- Customization - Choosing Difficulty-->
 
     <!-- Customization - Choosing Topic-->
-
-    <form id="form1">
-        <select multiple>
+    <div align="center">
+        <div class="custom-select" style="display: inline-block">
+        <form id="form1">
+        <select data-placeholder="Type a topic..." multiple class="chosen-select" name="form1">
             <option value='Algebra' selected>Algebra</option>
             <option value='Combinatorics' selected>Combinatorics</option>
             <option value='Geometry' selected>Geometry</option>
             <option value='Number Theory' selected>Number Theory</option>
-        </select>
-    </form>
+        </select> 
+        </form>
+        </div> 
 
     <!-- Customization - Choosing Source-->
-
-    <form id="form2">
+        <div class="custom-select" style="display: inline-block">
+        <form id="form2">
         <select multiple>
             <option value='IMO' selected>IMO</option>
             <option value='APMO' selected>APMO</option>
@@ -37,12 +41,25 @@
             <option value='Test 1' selected>Test 1</option>
             <option value='IMO Prelim' selected>IMO Prelim</option>
         </select>
-    </form>
+        </form>
+        </div> 
+    </div>
 
+    <br>
     <!-- Random Problem generator-->
     <button id="generate-text">Random Problem</button>
     <p id="random-text"></p>
 
+    <!-- Answer box (NEED TO INCLUDE CODE FOR CHECKING ANS/DISAPPEARING FOR PROOF QUESTIONS)-->
+    <form action="test.php" method="GET">
+        <!-- test.php is not a real thing, need to edit-->
+    
+        <input type="text" id="answerbox" placeholder="Enter answer:">
+        <input type="submit">
+
+    </form>
+
+    <br>
     <button id="generate-sol">Show Solution</button>
     <p id="sol-text"></p>
 
