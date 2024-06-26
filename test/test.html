@@ -13,121 +13,147 @@
 <body>
 <div class="mainbody">
     <h1><b>Math Olympiad Trainer</b></h1>
+
     <br>
+
     <hr>
     <br>
+
     <div align="center">
-        <button class="dropdown">Random Problem</button>
-        <button class="dropdown">Random Problem Set</button>
-        <button class="dropdown">Find Test/Problem</button>
+        <button class="dropdown" id="button1">Random Problem</button>
+        <button class="dropdown" id="button2">Random Problem Set</button>
+        <button class="dropdown" id="button3">Find Test/Problem</button>
     </div>
+
     <br>
     <hr>
-    <br>
-<!-- Past Test/Problem -->
-    <div align="center">    
-        <form>
-        <select id="source" class="source">
-            <option value='IMO' selected>IMO</option>
-            <option value='APMO'>APMO</option>
-            <option value='CHKMO'>CHKMO</option>
-            <option value='T2'>Test 2</option>
-            <option value='T1'>Test 1</option>
-            <option value='Prelim'>IMO Prelim</option>
-        </select>
-        </form>
-        <form>
-        <select id="year" class="year">
-            <option value='2023' selected>2023</option>
-            <option value='2022'>2022</option>
-            <option value='2021'>2021</option>
-            <option value='2020'>2020</option>
-            <option value='2019'>2019</option>
-            <option value='2018'>2018</option>
-            <option value='2017'>2017</option>
-            <option value='2016'>2016</option>
-            <option value='2015'>2015</option>
-            <option value='2014'>2014</option>
-        </select>
-        </form>
-        <input type="number" id="problemnum" placeholder="Problem Number:" ></input>
-    </div>
-    <br>
-    <br>
-    <div align="center">
-        <button id="generate-test">Find Test/Problem</button>
-    </div>
 
+    <br>
 
-    <div align="center" class="custom-select-container">
-        <!-- Customization - Choosing Difficulty-->
-        <div class="custom-select" style="display: inline-block">
-        <form id="diff">
-            <select multiple>
-                <option value='1' selected>[1, 2)</option>
-                <option value='2' selected>[2, 3)</option>
-                <option value='3' selected>[3, 4)</option>
-                <option value='4' selected>[4, 5)</option>
-                <option value='5' selected>[5, 6)</option>
-                <option value='6' selected>[6, 7)</option>
+    <!-- Past Test/Problem -->
+    <div class="f1">
+        <div align="center">    
+            <form>
+            <select id="source" class="source">
+                <option value='IMO' selected>IMO</option>
+                <option value='APMO'>APMO</option>
+                <option value='CHKMO'>CHKMO</option>
+                <option value='T2'>Test 2</option>
+                <option value='T1'>Test 1</option>
+                <option value='Prelim'>IMO Prelim</option>
             </select>
-        </form>
+            </form>
+            <form>
+            <select id="year" class="year">
+                <option value='2023' selected>2023</option>
+                <option value='2022'>2022</option>
+                <option value='2021'>2021</option>
+                <option value='2020'>2020</option>
+                <option value='2019'>2019</option>
+                <option value='2018'>2018</option>
+                <option value='2017'>2017</option>
+                <option value='2016'>2016</option>
+                <option value='2015'>2015</option>
+                <option value='2014'>2014</option>
+            </select>
+            </form>
+            <input type="number" id="problemnum" placeholder="Problem Number:"></input>
         </div>
 
-         <!-- Customization - Choosing Topic-->
-        <div class="custom-select" style="display: inline-block">
-        <form id="form1">
-        <select multiple class="chosen-select" name="form1">
-            <option value='Algebra' selected>Algebra</option>
-            <option value='Combinatorics' selected>Combinatorics</option>
-            <option value='Geometry' selected>Geometry</option>
-            <option value='Number Theory' selected>Number Theory</option>
-        </select> 
-        </form>
-        </div> 
-
-        <!-- Customization - Choosing Source-->
-        <div class="custom-select" style="display: inline-block">
-        <form id="form2">
-        <select multiple>
-            <option value='IMO' selected>IMO</option>
-            <option value='APMO' selected>APMO</option>
-            <option value='CHKMO' selected>CHKMO</option>
-            <option value='Test 2' selected>Test 2</option>
-            <option value='Test 1' selected>Test 1</option>
-            <option value='IMO Prelim' selected>IMO Prelim</option>
-        </select>
-        </form>
-        </div> 
+        <br>
+        <br>
+    
+        <div align="center">
+            <button id="generate-test">Find Test/Problem</button>
+        </div>
     </div>
-    <br>
-    <br>
+
+    <div class="f2">
+        <div align="center" class="custom-select-container">
+            <!-- Customization - Choosing Difficulty-->
+            <div class="custom-select" style="display: inline-block">
+            <form id="diff">
+                <select multiple>
+                    <option value='1' selected>[1, 2)</option>
+                    <option value='2' selected>[2, 3)</option>
+                    <option value='3' selected>[3, 4)</option>
+                    <option value='4' selected>[4, 5)</option>
+                    <option value='5' selected>[5, 6)</option>
+                    <option value='6' selected>[6, 7)</option>
+                </select>
+            </form>
+            </div>
+
+            <!-- Customization - Choosing Topic-->
+            <div class="custom-select" style="display: inline-block">
+            <form id="form1">
+            <select multiple class="chosen-select" name="form1">
+                <option value='Algebra' selected>Algebra</option>
+                <option value='Combinatorics' selected>Combinatorics</option>
+                <option value='Geometry' selected>Geometry</option>
+                <option value='Number Theory' selected>Number Theory</option>
+            </select> 
+            </form>
+            </div> 
+
+            <!-- Customization - Choosing Source-->
+            <div class="custom-select" style="display: inline-block">
+            <form id="form2">
+            <select multiple>
+                <option value='IMO' selected>IMO</option>
+                <option value='APMO' selected>APMO</option>
+                <option value='CHKMO' selected>CHKMO</option>
+                <option value='Test 2' selected>Test 2</option>
+                <option value='Test 1' selected>Test 1</option>
+                <option value='IMO Prelim' selected>IMO Prelim</option>
+            </select>
+            </form>
+            </div> 
+        </div>
+    </div>
+
+
     <!-- Random Problem generator-->
-    <div align="center"><button id="generate-text" class="randomproblem">Random Problem</button></div>
+    <div class="f3">
+        <br>
+        <br>
+        <div align="center"><button id="generate-text" class="randomproblem">Random Problem</button></div>
+    </div>
     
     <!-- Problem Set generator -->
 
-    <div>
+    <div class="f4">
         <div align="center"><input type="number" placeholder="Number of Problems:"  id="numberofproblems" class="numberofproblems"></input></div>
         <br>
         <br>
         <div align="center"><button id="generate-pset">Random Problem Set</button></div>
     </div>
     
-    
-    
     <br>
     <br>
     <br>
-    <p id="random-text" class="random-text"></p>
+
+    <div class="f5">
+        <p id="random-text" class="random-text"></p>
+    </div>
 
     <br>
     <br>
-    <div align="center"><button id="generate-sol">Show Solution</button></div>
+
+    <div class="f6">
+        <div align="center"><button id="generate-sol">Show Solution</button></div>
+    </div>
+
     <br>
     <br>
     <br>
-    <p id="sol-text" class="sol-text"></p>
+
+    <div class="f7">
+        <p id="sol-text" class="sol-text"></p>
+    </div>
+
+    <br>
+    <br>
 
     <!-- Below is JS code for Random Problem function -->
     <script>
@@ -266,10 +292,14 @@
                         $('#sol-text').html("");
 
                         var computational = info.at(1);
+                        document.querySelector('.f5').style.display = "block";
+                        document.querySelector('.f6').style.display = "block";
+                        document.querySelector('.f7').style.display = "none";
                     });
 
                     // To show solution
                     $('#generate-sol').click(function() {
+                        document.querySelector('.f7').style.display = "block";
                         $('#sol-text').html(solution);
                         MathJax.typeset();
                     });
@@ -378,6 +408,10 @@
                         $('#random-text').html(pset);
                         MathJax.typeset();
                         $('#sol-text').html("");
+
+                        document.querySelector('.f5').style.display = "block";
+                        document.querySelector('.f6').style.display = "block";
+                        document.querySelector('.f7').style.display = "none";
                     });
 
                     // Find Test
@@ -460,7 +494,48 @@
                         $('#random-text').html(pset);
                         MathJax.typeset();
                         $('#sol-text').html("");
+
+                        document.querySelector('.f5').style.display = "block";
+                        document.querySelector('.f6').style.display = "block";
+                        document.querySelector('.f7').style.display = "none";
                     });
+
+                    // When random problem pressed
+
+                    $('#button1').click(function() {
+                        document.querySelector('.f1').style.display = "none";
+                        document.querySelector('.f2').style.display = "block";
+                        document.querySelector('.f3').style.display = "block";
+                        document.querySelector('.f4').style.display = "none";
+                        document.querySelector('.f5').style.display = "none";
+                        document.querySelector('.f6').style.display = "none";
+                        document.querySelector('.f7').style.display = "none";
+                    });
+
+                    // When random pset pressed
+
+                    $('#button2').click(function() {
+                        document.querySelector('.f1').style.display = "none";
+                        document.querySelector('.f2').style.display = "block";
+                        document.querySelector('.f3').style.display = "none";
+                        document.querySelector('.f4').style.display = "block";
+                        document.querySelector('.f5').style.display = "none";
+                        document.querySelector('.f6').style.display = "none";
+                        document.querySelector('.f7').style.display = "none";
+                    });
+
+                    // When find problem/test pressed
+
+                    $('#button3').click(function() {
+                        document.querySelector('.f1').style.display = "block";
+                        document.querySelector('.f2').style.display = "none";
+                        document.querySelector('.f3').style.display = "none";
+                        document.querySelector('.f4').style.display = "none";
+                        document.querySelector('.f5').style.display = "none";
+                        document.querySelector('.f6').style.display = "none";
+                        document.querySelector('.f7').style.display = "none";
+                    });
+
                 })
                 .catch(function(error) {
                     console.error('Error reading CSV file:', error);
