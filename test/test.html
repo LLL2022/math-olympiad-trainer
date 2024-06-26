@@ -173,7 +173,7 @@
                             var infoConsideredProcessed = infoConsidered.join(', ').split(";;");
                             var diffConsidered = infoConsideredProcessed[3];
 
-                            if (possibleDiff.includes(Math.floor(diffConsidered))) {
+                            if (possibleDiff.includes(Math.floor(diffConsidered)) || diffConsidered == 0) {
                                 problemListArrayFirst.push(infoConsidered);
                             }
                         }
@@ -270,7 +270,7 @@
                             var infoConsideredProcessed = infoConsidered.join(', ').split(";;");
                             var diffConsidered = infoConsideredProcessed[3];
 
-                            if (possibleDiff.includes(Math.floor(diffConsidered))) {
+                            if (possibleDiff.includes(Math.floor(diffConsidered)) || diffConsidered == 0) {
                                 problemListArrayFirst.push(infoConsidered);
                             }
                         }
