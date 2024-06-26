@@ -15,6 +15,17 @@
 
     <!-- Customization - Choosing Difficulty-->
 
+    <form id="diff">
+        <select multiple>
+            <option value='1' selected>[1, 2)</option>
+            <option value='2' selected>[2, 3)</option>
+            <option value='3' selected>[3, 4)</option>
+            <option value='4' selected>[4, 5)</option>
+            <option value='5' selected>[5, 6)</option>
+            <option value='6' selected>[6, 7)</option>
+        </select>
+    </form>
+
     <!-- Customization - Choosing Topic-->
 
     <form id="form1">
@@ -124,6 +135,10 @@
                     var sourceSelect = document.querySelector('form#form2 select[multiple]');
                     var sourceStr = ['IMO', 'APMO', 'CHKMO', 'T2', 'T1', 'Prelim'];
 
+                    // Get info about difficulty
+                    var diffSelect = document.querySelector('form#diff select[multiple]');
+                    var diffStr = [1, 2, 3, 4, 5, 6];
+
                     // Single random problem
                     $('#generate-text').click(function() {
                         solution = "";
@@ -139,15 +154,40 @@
                             }
                         }
 
-                        // Create list of possible problems based on topic
-                        var problemListArray = [];
+                        // Possible difficulties
+
+                        var selectedStatusDiff = getSelectedStatus(diffSelect);
+                        var possibleDiff = [];
+
+                        for (var i = 0; i < 6; i++){
+                            if (selectedStatusDiff[i]){
+                                possibleDiff.push(diffStr[i]);
+                            }
+                        }
+
+                        // Check Difficulty
+
+                        var problemListArrayFirst = [];
                         for (var i = 1; i < twoDArray.length; i++) {
                             var infoConsidered = twoDArray[i];
+                            var infoConsideredProcessed = infoConsidered.join(', ').split(";;");
+                            var diffConsidered = infoConsideredProcessed[3];
+
+                            if (possibleDiff.includes(Math.floor(diffConsidered))) {
+                                problemListArrayFirst.push(infoConsidered);
+                            }
+                        }
+                        
+                        // Create list of possible problems based on topic
+                        var problemListArray = [];
+                        for (var i = 0; i < problemListArrayFirst.length; i++) {
+                            var infoConsidered = problemListArrayFirst[i];
                             var infoConsideredProcessed = infoConsidered.join(', ').split(";;");
                             var subjectConsidered = infoConsideredProcessed[4];
 
                             if (possibleSubjects.includes(subjectConsidered)) {
                                 problemListArray.push(infoConsidered);
+                                console.log(infoConsidered);
                             }
                         }
 
@@ -163,7 +203,7 @@
 
                         // Create list of possible problems based on source
                         var problemListArrayNew = [];
-                        for (var i = 1; i < problemListArray.length; i++) {
+                        for (var i = 0; i < problemListArray.length; i++) {
                             var infoConsideredNew = problemListArray[i];
                             var infoConsideredProcessedNew = infoConsideredNew.join(', ').split(" ");
                             var sourceConsidered = infoConsideredProcessedNew[0];
@@ -211,10 +251,34 @@
                             }
                         }
 
-                        // Create list of possible problems based on topic
-                        var problemListArray = [];
+                        // Possible difficulties
+
+                        var selectedStatusDiff = getSelectedStatus(diffSelect);
+                        var possibleDiff = [];
+
+                        for (var i = 0; i < 6; i++){
+                            if (selectedStatusDiff[i]){
+                                possibleDiff.push(diffStr[i]);
+                            }
+                        }
+
+                        // Check Difficulty
+
+                        var problemListArrayFirst = [];
                         for (var i = 1; i < twoDArray.length; i++) {
                             var infoConsidered = twoDArray[i];
+                            var infoConsideredProcessed = infoConsidered.join(', ').split(";;");
+                            var diffConsidered = infoConsideredProcessed[3];
+
+                            if (possibleDiff.includes(Math.floor(diffConsidered))) {
+                                problemListArrayFirst.push(infoConsidered);
+                            }
+                        }
+
+                        // Create list of possible problems based on topic
+                        var problemListArray = [];
+                        for (var i = 0; i < problemListArrayFirst.length; i++) {
+                            var infoConsidered = problemListArrayFirst[i];
                             var infoConsideredProcessed = infoConsidered.join(', ').split(";;");
                             var subjectConsidered = infoConsideredProcessed[4];
 
@@ -235,7 +299,7 @@
 
                         // Create list of possible problems based on source
                         var problemListArrayNew = [];
-                        for (var i = 1; i < problemListArray.length; i++) {
+                        for (var i = 0; i < problemListArray.length; i++) {
                             var infoConsideredNew = problemListArray[i];
                             var infoConsideredProcessedNew = infoConsideredNew.join(', ').split(" ");
                             var sourceConsidered = infoConsideredProcessedNew[0];
