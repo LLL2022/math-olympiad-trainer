@@ -7,6 +7,7 @@ h1{
     font-style: normal;
     color: black;
     padding-left: 80px; 
+    padding-top: 40px;
 }
 
 body{
@@ -14,14 +15,47 @@ body{
     font-weight: 300;
     font-style: normal;
     color: black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 90%;
+    height: 90%;
+    margin:0 auto;
+    background-color: #e4dfda;
+}
+
+.mainbody{
+    background-color: white;
 }
 
 button{
     font-family:"IBM Plex Sans", sans-serif;
-    font-weight: 300;
+    font-size: x-large;
+    font-weight: 500;
     font-style: normal;
-    color: black;
+    color:white;
+    height: 80px;
+    width: 400px;
+    background-color: #d4b483;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: rgb(0, 0, 0, 0.5);
+
 }
+
+button:hover{
+    background-color: rgba(212,180,131, 0.8);
+    -webkit-transform: translateY(-4px);
+	transform: translateY(-4px);
+}
+
+.random-text{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: rgb(0, 0, 0, 0.5);
+    padding: 40px;
+    font-size: x-large;
+    width: 80%;
+    margin:0 auto;
+            
+}
+
 
 input{
     font-family:"IBM Plex Sans", sans-serif;

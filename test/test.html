@@ -11,6 +11,7 @@
     <script src="https://d3js.org/d3.v6.min.js"></script>
 </head>
 <body>
+<div class="mainbody">
     <h1>Math Olympiad Trainer</h1>
 
     <!-- SECTION 1: SINGLE PROBLEM-->
@@ -47,8 +48,8 @@
 
     <br>
     <!-- Random Problem generator-->
-    <button id="generate-text">Random Problem</button>
-    <p id="random-text"></p>
+    <button id="generate-text" class="randomproblem">Random Problem</button>
+    <p id="random-text" class="random-text"></p>
 
     <!-- Answer box (NEED TO INCLUDE CODE FOR CHECKING ANS/DISAPPEARING FOR PROOF QUESTIONS)-->
     <form action="test.php" method="GET">
@@ -275,6 +276,6 @@
                 });
         });
     </script>
-    
+</div>
 </body>
 </html>
