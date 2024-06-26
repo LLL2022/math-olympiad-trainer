@@ -103,3 +103,19 @@ input{
 .custom-select:nth-child(3) {
     margin-right: 15%;
 }
+
+.answerbox {
+    display: none;
+}
+
+.submit {
+    font-family:"IBM Plex Sans", sans-serif;
+    font-size: small;
+    font-weight: 500;
+    font-style: normal;
+    color:white;
+    height: 20px;
+    width: 80px;
+    background-color: #704E2E;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}

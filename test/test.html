@@ -63,16 +63,8 @@
     <br>
     <p id="random-text" class="random-text"></p>
 
-    <!-- Answer box (NEED TO INCLUDE CODE FOR CHECKING ANS/DISAPPEARING FOR PROOF QUESTIONS)-->
-    <form action="test.php" method="GET">
-        <!-- test.php is not a real thing, need to edit-->
-    
-        <input type="text" id="answerbox" placeholder="Enter answer:"></input>
-        <input type="submit"></input>
-
-    </form>
-
     <br>
+
     <button id="generate-sol">Show Solution</button>
     <p id="sol-text"></p>
 
@@ -134,6 +126,7 @@
                     var info;
                     var flag = "problem";
                     var solution = "";
+                    var answer = "";
 
                     // Getting info about which subjects
                     var subjectSelect = document.querySelector('form#form1 select[multiple]');
@@ -243,10 +236,14 @@
                         info = randomText.split(";;");
                         let question = "<b>Problem. </b>" + info.at(-2);
                         solution = "<b>Solution. </b>" + info.at(-1);
+                        answer = info.at(2).slice(2, -2);
+                        console.log(answer);
 
                         $('#random-text').html(question);
                         MathJax.typeset();
                         $('#sol-text').html("");
+
+                        var computational = info.at(1);
                     });
 
                     // To show solution
