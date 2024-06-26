@@ -18,6 +18,17 @@
 
     <!-- Customization - Choosing Difficulty-->
 
+    <form id="diff">
+        <select multiple>
+            <option value='1' selected>[1, 2)</option>
+            <option value='2' selected>[2, 3)</option>
+            <option value='3' selected>[3, 4)</option>
+            <option value='4' selected>[4, 5)</option>
+            <option value='5' selected>[5, 6)</option>
+            <option value='6' selected>[6, 7)</option>
+        </select>
+    </form>
+
     <!-- Customization - Choosing Topic-->
     <div align="center">
         <div class="custom-select" style="display: inline-block">
@@ -66,9 +77,41 @@
 
     <!-- Problem Set generator -->
 
+    Number of Problems: <input type="number" id="numberofproblems"></input>
+
     <button id="generate-pset">Random Problem Set</button>
 
-    <div id="buttonContainer"></div>
+    <!-- Past Test/Problem -->
+
+    <form>
+        <select id="source">
+            <option value='IMO' selected>IMO</option>
+            <option value='APMO'>APMO</option>
+            <option value='CHKMO'>CHKMO</option>
+            <option value='T2'>Test 2</option>
+            <option value='T1'>Test 1</option>
+            <option value='Prelim'>IMO Prelim</option>
+        </select>
+    </form>
+
+    <form>
+        <select id="year">
+            <option value='2023' selected>2023</option>
+            <option value='2022'>2022</option>
+            <option value='2021'>2021</option>
+            <option value='2020'>2020</option>
+            <option value='2019'>2019</option>
+            <option value='2018'>2018</option>
+            <option value='2017'>2017</option>
+            <option value='2016'>2016</option>
+            <option value='2015'>2015</option>
+            <option value='2014'>2014</option>
+        </select>
+    </form>
+
+    Problem Number: <input type="number" id="problemnum"></input>
+
+    <button id="generate-test">Find Test/Problem</button>
 
 
     <!-- Below is JS code for Random Problem function -->
@@ -87,16 +130,12 @@
                         return row.split(',');
                     });
 
-                    // Now, twoDArray should contain all the entries from the CSV file
-                    console.log(twoDArray);
-
                     var info;
                     var flag = "problem";
                     var solution = "";
 
                     // Getting info about which subjects
                     var subjectSelect = document.querySelector('form#form1 select[multiple]');
-                    console.log(subjectSelect);
                     var subjectStr = ['A', 'C', 'G', 'N'];
 
                     // Function to get the selected/not selected status of each option
@@ -112,8 +151,11 @@
 
                     // Getting info about which sources
                     var sourceSelect = document.querySelector('form#form2 select[multiple]');
-                    console.log(sourceSelect);
                     var sourceStr = ['IMO', 'APMO', 'CHKMO', 'T2', 'T1', 'Prelim'];
+
+                    // Get info about difficulty
+                    var diffSelect = document.querySelector('form#diff select[multiple]');
+                    var diffStr = [1, 2, 3, 4, 5, 6];
 
                     // Single random problem
                     $('#generate-text').click(function() {
@@ -130,19 +172,42 @@
                             }
                         }
 
-                        // Create list of possible problems based on topic
-                        var problemListArray = [];
+                        // Possible difficulties
+
+                        var selectedStatusDiff = getSelectedStatus(diffSelect);
+                        var possibleDiff = [];
+
+                        for (var i = 0; i < 6; i++){
+                            if (selectedStatusDiff[i]){
+                                possibleDiff.push(diffStr[i]);
+                            }
+                        }
+
+                        // Check Difficulty
+
+                        var problemListArrayFirst = [];
                         for (var i = 1; i < twoDArray.length; i++) {
                             var infoConsidered = twoDArray[i];
+                            var infoConsideredProcessed = infoConsidered.join(', ').split(";;");
+                            var diffConsidered = infoConsideredProcessed[3];
+
+                            if (possibleDiff.includes(Math.floor(diffConsidered)) || diffConsidered == 0) {
+                                problemListArrayFirst.push(infoConsidered);
+                            }
+                        }
+                        
+                        // Create list of possible problems based on topic
+                        var problemListArray = [];
+                        for (var i = 0; i < problemListArrayFirst.length; i++) {
+                            var infoConsidered = problemListArrayFirst[i];
                             var infoConsideredProcessed = infoConsidered.join(', ').split(";;");
                             var subjectConsidered = infoConsideredProcessed[4];
 
                             if (possibleSubjects.includes(subjectConsidered)) {
                                 problemListArray.push(infoConsidered);
+                                console.log(infoConsidered);
                             }
                         }
-
-                        console.log(problemListArray);
 
                         // Array of possible sources
                         var selectedStatusSource = getSelectedStatus(sourceSelect);
@@ -156,7 +221,7 @@
 
                         // Create list of possible problems based on source
                         var problemListArrayNew = [];
-                        for (var i = 1; i < problemListArray.length; i++) {
+                        for (var i = 0; i < problemListArray.length; i++) {
                             var infoConsideredNew = problemListArray[i];
                             var infoConsideredProcessedNew = infoConsideredNew.join(', ').split(" ");
                             var sourceConsidered = infoConsideredProcessedNew[0];
@@ -165,8 +230,6 @@
                                 problemListArrayNew.push(infoConsideredNew);
                             }
                         }
-
-                        console.log(problemListArrayNew);
 
                         // Random problem
 
@@ -177,8 +240,8 @@
                         // We concatenate everything them split based on semicolons manually
 
                         info = randomText.split(";;");
-                        let question = info.at(-2);
-                        solution = info.at(-1);
+                        let question = "<b>Problem. </b>" + info.at(-2);
+                        solution = "<b>Solution. </b>" + info.at(-1);
 
                         $('#random-text').html(question);
                         MathJax.typeset();
@@ -187,7 +250,6 @@
 
                     // To show solution
                     $('#generate-sol').click(function() {
-                        console.log(solution);
                         $('#sol-text').html(solution);
                         MathJax.typeset();
                     });
@@ -207,10 +269,34 @@
                             }
                         }
 
-                        // Create list of possible problems based on topic
-                        var problemListArray = [];
+                        // Possible difficulties
+
+                        var selectedStatusDiff = getSelectedStatus(diffSelect);
+                        var possibleDiff = [];
+
+                        for (var i = 0; i < 6; i++){
+                            if (selectedStatusDiff[i]){
+                                possibleDiff.push(diffStr[i]);
+                            }
+                        }
+
+                        // Check Difficulty
+
+                        var problemListArrayFirst = [];
                         for (var i = 1; i < twoDArray.length; i++) {
                             var infoConsidered = twoDArray[i];
+                            var infoConsideredProcessed = infoConsidered.join(', ').split(";;");
+                            var diffConsidered = infoConsideredProcessed[3];
+
+                            if (possibleDiff.includes(Math.floor(diffConsidered)) || diffConsidered == 0) {
+                                problemListArrayFirst.push(infoConsidered);
+                            }
+                        }
+
+                        // Create list of possible problems based on topic
+                        var problemListArray = [];
+                        for (var i = 0; i < problemListArrayFirst.length; i++) {
+                            var infoConsidered = problemListArrayFirst[i];
                             var infoConsideredProcessed = infoConsidered.join(', ').split(";;");
                             var subjectConsidered = infoConsideredProcessed[4];
 
@@ -218,8 +304,6 @@
                                 problemListArray.push(infoConsidered);
                             }
                         }
-
-                        console.log(problemListArray);
 
                         // Array of possible sources
                         var selectedStatusSource = getSelectedStatus(sourceSelect);
@@ -233,7 +317,7 @@
 
                         // Create list of possible problems based on source
                         var problemListArrayNew = [];
-                        for (var i = 1; i < problemListArray.length; i++) {
+                        for (var i = 0; i < problemListArray.length; i++) {
                             var infoConsideredNew = problemListArray[i];
                             var infoConsideredProcessedNew = infoConsideredNew.join(', ').split(" ");
                             var sourceConsidered = infoConsideredProcessedNew[0];
@@ -243,9 +327,14 @@
                             }
                         }
 
-                        console.log(problemListArrayNew);
-
-                        var N = 10;
+                        var Number = document.querySelector("#numberofproblems");
+                        var N = Number.value;
+                        if (N == 0){
+                            N = 1;
+                        }
+                        if (N >= 100){
+                            N = 100;
+                        }
 
                         var pset = "";
 
@@ -259,11 +348,93 @@
                             // We concatenate everything them split based on semicolons manually
 
                             info = randomText.split(";;");
-                            let question = info.at(-2);
-                            let singlesolution = info.at(-1);
+                            let question = `<b>Problem ${i+1}. </b>` + info.at(-2);
+                            let singlesolution = `<b>Solution ${i+1}. </b>` + info.at(-1);
 
                             pset += question + "<br><br>";
                             solution += singlesolution + "<br><br>";
+                        }
+
+                        $('#random-text').html(pset);
+                        MathJax.typeset();
+                        $('#sol-text').html("");
+                    });
+
+                    // Find Test
+                    $('#generate-test').click(function() {
+                        flag = "test";
+                        solution = "";
+
+                        var selectElementTestSource = document.getElementById('source');
+                        var selectedOptionSource = selectElementTestSource.selectedOptions[0];
+                        var source = selectedOptionSource.value;
+
+                        var selectElementTestYear = document.getElementById('year');
+                        var selectedOptionYear = selectElementTestYear.selectedOptions[0];
+                        var year = selectedOptionYear.value;
+
+                        var problemnumberlist = document.querySelector('#problemnum');
+                        var problemnumber = 0;
+                        if (problemnumberlist != null){
+                            problemnumber = problemnumberlist.value;
+                        }
+
+                        // Create list of problems
+                        var problemListArrayNew = [];
+                        for (var i = 1; i < twoDArray.length; i++) {
+                            var infoConsideredNew = twoDArray[i];
+                            var infoConsideredProcessedNew = infoConsideredNew.join(', ').split(" ");
+                            var sourceConsidered = infoConsideredProcessedNew[0];
+
+                            if (infoConsideredProcessedNew.length > 4) {
+                                var yearConsidered = infoConsideredProcessedNew[1].slice(0, 4);
+                                var problemnumberConsidered = infoConsideredProcessedNew[1].slice(5, 7);
+
+                                if (problemnumberConsidered[1] == ";") {
+                                    var problemnumberConsidered = problemnumberConsidered[0];
+                                }
+
+            
+                                if (problemnumber == 0) {
+                                    if ((yearConsidered == year) && (sourceConsidered == source)) {
+                                        problemListArrayNew.push(infoConsideredNew);
+                                    }
+                                }
+
+                                else {
+                                    if ((yearConsidered == year) && (sourceConsidered == source) && (problemnumberConsidered == problemnumber)) {
+                                        problemListArrayNew.push(infoConsideredNew);
+                                    }
+                                }
+                            }
+                        }
+
+                        var pset = "";
+
+                        for (var i = 0; i < problemListArrayNew.length; i++) {
+                            // Random problem
+
+                            var randomrow = problemListArrayNew[i];
+                            var randomText = randomrow.join(', ');
+
+                            // JS splits based on commas, not semicolons
+                            // We concatenate everything them split based on semicolons manually
+
+                            info = randomText.split(";;");
+                            if (problemnumber == 0){
+                                let question = `<b>Problem ${i+1}. </b>` + info.at(-2);
+                                let singlesolution = `<b>Solution ${i+1}. </b>` + info.at(-1);
+
+                                pset += question + "<br><br>";
+                                solution += singlesolution + "<br><br>";
+                            }
+                            else{
+                                let question = `<b>Problem ${problemnumber}. </b>` + info.at(-2);
+                                let singlesolution = `<b>Solution ${problemnumber}. </b>` + info.at(-1);
+
+                                pset += question + "<br><br>";
+                                solution += singlesolution + "<br><br>";
+                            }
                         }
 
                         $('#random-text').html(pset);
